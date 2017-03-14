@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>Контакты (фиксированная шапка)</name>
+        <creationDate>2015</creationDate>
+        <author>gordoney</author>
+        <authorEmail>sergeibolonikov@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description>Контакты (фиксированная шапка)</description>
+        <files>
+                <filename module="mod_header_contacts_fixed_gr">mod_header_contacts_fixed_gr.php</filename>
+                <filename>mod_header_contacts_fixed_gr.xml</filename>
+        </files>
+	    <config>
+            <fields name="params">
+			    <fieldset name="basic">
+					<field name="logo1" type="media"
+						label="Логотип 1"
+						description="Логотип 1"	/>
+					<field name="text1" type="text"
+						label="Телефон 1"
+						description="Телефон 1"	/>
+					<field name="logo2" type="media"
+						label="Логотип 2"
+						description="Логотип 2"	/>
+					<field name="text2" type="text"
+						label="Телефон 2"
+						description="Телефон 2"	/>
+				</fieldset>
+				<fieldset name="advanced">
+					<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				</fieldset>
+			</fields>
+        </config>
+
+</extension>

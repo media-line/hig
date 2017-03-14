@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>mod_main_category</name>
+        <creationDate>2015</creationDate>
+        <author>gordoney</author>
+        <authorEmail>sergeibolonikov@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description></description>
+        <files>
+                <filename module="mod_main_category">mod_main_category.php</filename>
+                <filename>mod_main_category.xml</filename>
+        </files>
+	    <config>
+		    <fields name="params">
+			    <fieldset name="basic">
+					<field name="img1" type="media"
+						label="Изображение 1"
+						description="Изображение 1"	/>
+					<field name="name1" type="text"
+						label="Название 1"
+						description="Название 1"	/>
+					<field name="url1" type="text"
+						label="Ссылка 1"
+						description="Ссылка 1" />
+					<field name="img2" type="media"
+						label="Изображение 2"
+						description="Изображение 2"	/>
+					<field name="name2" type="text"
+						label="Название 2"
+						description="Название 2"	/>
+					<field name="url2" type="text"
+						label="Ссылка 2"
+						description="Ссылка 2" />
+					<field name="img3" type="media"
+						label="Изображение 3"
+						description="Изображение 3"	/>
+					<field name="name3" type="text"
+						label="Название 3"
+						description="Название 3"	/>
+					<field name="url3" type="text"
+						label="Ссылка 3"
+						description="Ссылка 3" />
+					<field name="img4" type="media"
+						label="Изображение 4"
+						description="Изображение 4"	/>
+					<field name="name4" type="text"
+						label="Название 4"
+						description="Название 4"	/>
+					<field name="url4" type="text"
+						label="Ссылка 4"
+						description="Ссылка 4" />
+					<field name="img5" type="media"
+						label="Изображение 5"
+						description="Изображение 5"	/>
+					<field name="name5" type="text"
+						label="Название 5"
+						description="Название 5"	/>
+					<field name="url5" type="text"
+						label="Ссылка 5"
+						description="Ссылка 5" />
+					<field name="img6" type="media"
+						label="Изображение 6"
+						description="Изображение 6"	/>
+					<field name="name6" type="text"
+						label="Название 6"
+						description="Название 6"	/>
+					<field name="url6" type="text"
+						label="Ссылка 6"
+						description="Ссылка 6" />
+				</fieldset>
+				<fieldset name="advanced">
+					<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				</fieldset>
+			</fields>
+        </config>
+
+</extension>

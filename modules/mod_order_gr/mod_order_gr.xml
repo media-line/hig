@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>Форма обратной связи</name>
+        <creationDate>2015</creationDate>
+        <author>gordoney</author>
+        <authorEmail>sergeibolonikov@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description>Форма обратной связи</description>
+        <files>
+                <filename module="mod_order_gr">mod_order_gr.php</filename>
+                <filename>mod_order_gr.xml</filename>
+        </files>
+	    <config>
+            <fields name="params">
+			    <fieldset name="order" label="Заказ">
+					<field name="recipient" type="text"
+						label="email"
+						description="несколько емейлов указывать через ;"/>
+					<field name="thanks" type="text"
+						label="Текст после заказа"
+						description="Текст после заказа"/>		
+					<field name="button" type="text"
+						label="Текст на кнопке"
+						description="Текст на кнопке"/>
+					<field name="name" type="text"
+						label="Заглавие формы"
+						description="Заглавие формы"/>		
+                    <field name="body_text" type="text"
+						label="Текст в форме"
+						description="Заглавие формы"/>						
+				</fieldset>
+				<fieldset name="advanced">
+					<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				</fieldset>
+			</fields>
+        </config>
+
+</extension>

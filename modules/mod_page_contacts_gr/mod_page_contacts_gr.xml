@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>Страница контактов</name>
+        <creationDate>2015</creationDate>
+        <author>gordoney</author>
+        <authorEmail>sergeibolonikov@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description>Страница контактов</description>
+        <files>
+                <filename module="mod_page_contacts_gr">mod_page_contacts_gr.php</filename>
+                <filename>mod_page_contacts_gr.xml</filename>
+        </files>
+	    <config>
+            <fields name="params">
+			    <fieldset name="basic">		
+					<field name="info_link" type="text"
+						label="Ссылка на скачивание документ" />						
+					<field name="map"
+						type="Repeatable"
+						description="Карты"
+						label="Карты">
+						<fieldset name="map_modal" repeat="true">
+							<field name="maplogo"
+								label="Иконка для карты"
+								type="media" />
+							<field name="maptextcity" type="text"
+								label="Город" />
+							<field name="maptextstreet" type="text"
+								label="Адрес" />
+							<field name="mapx" type="text"
+								label="Широта" />
+							<field name="mapy" type="text"
+								label="Долгота" />
+							<field name="mapzoom" type="text"
+								label="Увеличение" />
+						</fieldset>
+					</field>	
+					
+					<field name="block1name" type="text"
+						label="Название первого блока" />
+					<field name="block1"
+						type="Repeatable"
+						description="Первый блок контактов"
+						label="Первый блок контактов">
+						<fieldset name="block1_modal" repeat="true">
+							<field name="block1logo"
+								label="Иконка"
+								type="media" />
+							<field name="block1info" type="text"
+								label="Информация" />
+							<field name="block1info" type="text"
+								label="Информация" />
+							<field name="active1" type="list" default="" label="активный элемент">
+								<option value="no">No active</option>
+								<option value="skype">skype</option>
+								<option value="viber">viber</option>
+								<option value="mail">mail</option>
+							</field>
+							<field name="active1url" type="text"
+								label="Активная ссылка" />
+						</fieldset>
+					</field>	
+
+					<field name="block2name" type="text"
+						label="Название второго блока" />
+					<field name="block2"
+						type="Repeatable"
+						description="Второй блок контактов"
+						label="Второй блок контактов">
+						<fieldset name="block2_modal" repeat="true">
+							<field name="block2logo"
+								label="Иконка"
+								type="media" />
+							<field name="block2info" type="text"
+								label="Информация" />
+							<field name="active2" type="list" default="" label="активный элемент">
+								<option value="no">No active</option>
+								<option value="skype">skype</option>
+								<option value="viber">viber</option>
+								<option value="mail">mail</option>
+							</field>
+							<field name="active2url" type="text"
+								label="Активная ссылка" />
+						</fieldset>
+					</field>
+
+					<field name="block3name" type="text"
+						label="Название третьего блока" />
+					<field name="block3"
+						type="Repeatable"
+						description="Третий блок контактов"
+						label="Третий блок контактов">
+						<fieldset name="block3_modal" repeat="true">
+							<field name="block3logo"
+								label="Иконка"
+								type="media" />
+							<field name="block3info" type="text"
+								label="Информация" />
+							<field name="active3" type="list" default="" label="активный элемент">
+								<option value="no">No active</option>
+								<option value="skype">skype</option>
+								<option value="viber">viber</option>
+								<option value="mail">mail</option>
+							</field>
+							<field name="active3url" type="text"
+								label="Активная ссылка" />
+						</fieldset>
+					</field>					
+
+					<field name="sectiontext" type="text"
+						label="Название раздела" />
+					<field name="section1" type="text"
+						label="Первый отдел" />
+					<field name="employees1"
+						type="Repeatable"
+						description="Сотрудники"
+						label="Сотрудники">
+						<fieldset name="employee1_modal" repeat="true">
+							<field name="employee1name" type="text"
+								label="ФИО" />
+							<field name="employee1job" type="text"
+								label="Профессия" />
+							<field name="employee1logo1" type="media"
+								label="Логотип" />
+							<field name="employee1info1" type="text"
+								label="Информация" />
+							<field name="employee1logo2" type="media"
+								label="Логотип" />
+							<field name="employee1info2" type="text"
+								label="Информация" />
+							<field name="employee1logo3" type="media"
+								label="Логотип" />
+							<field name="employee1info3" type="text"
+								label="Информация" />
+						</fieldset>
+					</field>		
+
+					<field name="section2" type="text"
+						label="Второй отдел" />
+					<field name="employees2"
+						type="Repeatable"
+						description="Сотрудники"
+						label="Сотрудники">
+						<fieldset name="employee2_modal" repeat="true">
+							<field name="employee2name" type="text"
+								label="ФИО" />
+							<field name="employee2job" type="text"
+								label="Профессия" />
+							<field name="employee2logo1" type="media"
+								label="Логотип" />
+							<field name="employee2info1" type="text"
+								label="Информация" />
+							<field name="employee2logo2" type="media"
+								label="Логотип" />
+							<field name="employee2info2" type="text"
+								label="Информация" />
+							<field name="employee2logo3" type="media"
+								label="Логотип" />
+							<field name="employee2info3" type="text"
+								label="Информация" />
+						</fieldset>
+					</field>					
+
+					<field name="section3" type="text"
+						label="Третий отдел" />
+					<field name="employees3"
+						type="Repeatable"
+						description="Сотрудники"
+						label="Сотрудники">
+						<fieldset name="employee3_modal" repeat="true">
+							<field name="employee3name" type="text"
+								label="ФИО" />
+							<field name="employee3job" type="text"
+								label="Профессия" />
+							<field name="employee3logo1" type="media"
+								label="Логотип" />
+							<field name="employee3info1" type="text"
+								label="Информация" />
+							<field name="employee3logo2" type="media"
+								label="Логотип" />
+							<field name="employee3info2" type="text"
+								label="Информация" />
+							<field name="employee3logo3" type="media"
+								label="Логотип" />
+							<field name="employee3info3" type="text"
+								label="Информация)" />
+						</fieldset>
+					</field>										
+
+					<field name="section4" type="text"
+						label="Четвёртый отдел" />
+					<field name="employees4"
+						type="Repeatable"
+						description="Сотрудники"
+						label="Сотрудники">
+						<fieldset name="employee4_modal" repeat="true">
+							<field name="employee4name" type="text"
+								label="ФИО" />
+							<field name="employee4job" type="text"
+								label="Профессия" />
+							<field name="employee4logo1" type="media"
+								label="Логотип" />
+							<field name="employee4info1" type="text"
+								label="Информация" />
+							<field name="employee4logo2" type="media"
+								label="Логотип" />
+							<field name="employee4info2" type="text"
+								label="Информация" />
+							<field name="employee4logo3" type="media"
+								label="Логотип" />
+							<field name="employee4info3" type="text"
+								label="Информация" />
+						</fieldset>
+					</field>	
+					
+					<field name="section5" type="text"
+						label="Пятый отдел" />
+					<field name="employees5"
+						type="Repeatable"
+						description="Сотрудники"
+						label="Сотрудники">
+						<fieldset name="employee5_modal" repeat="true">
+							<field name="employee5name" type="text"
+								label="ФИО" />
+							<field name="employee5job" type="text"
+								label="Профессия" />
+							<field name="employee5logo1" type="media"
+								label="Логотип" />
+							<field name="employee5info1" type="text"
+								label="Информация" />
+							<field name="employee5logo2" type="media"
+								label="Логотип" />
+							<field name="employee5info2" type="text"
+								label="Информация" />
+							<field name="employee5logo3" type="media"
+								label="Логотип" />
+							<field name="employee5info3" type="text"
+								label="Информация" />
+						</fieldset>
+					</field>		
+
+					<field name="section6" type="text"
+						label="Шестой отдел" />
+					<field name="employees6"
+						type="Repeatable"
+						description="Сотрудники"
+						label="Сотрудники">
+						<fieldset name="employee6_modal" repeat="true">
+							<field name="employee6name" type="text"
+								label="ФИО" />
+							<field name="employee6job" type="text"
+								label="Профессия" />
+							<field name="employee6logo1" type="media"
+								label="Логотип" />
+							<field name="employee6info1" type="text"
+								label="Информация" />
+							<field name="employee6logo2" type="media"
+								label="Логотип" />
+							<field name="employee6info2" type="text"
+								label="Информация" />
+							<field name="employee6logo3" type="media"
+								label="Логотип" />
+							<field name="employee6info3" type="text"
+								label="Информация" />
+						</fieldset>
+					</field>	
+					
+						
+				</fieldset>
+				<fieldset name="advanced">
+					<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				</fieldset>
+			</fields>
+        </config>
+
+</extension>

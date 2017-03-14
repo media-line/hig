@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>mod_main_plus</name>
+        <creationDate>2015</creationDate>
+        <author>gordoney</author>
+        <authorEmail>sergeibolonikov@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description></description>
+        <files>
+                <filename module="mod_main_plus">mod_main_plus.php</filename>
+                <filename>mod_main_plus.xml</filename>
+        </files>
+	    <config>
+		    <fields name="params">
+			    <fieldset name="basic">
+					<field name="img1" type="media"
+						label="Изображение 1"
+						description="Изображение 1"	/>
+					<field name="img-other1" type="media"
+						label="Изображение 1"
+						description="Изображение 1"	/>
+					<field name="name1" type="text"
+						label="Название 1"
+						description="Название 1"	/>
+					<field name="text1" type="text"
+						label="Содержание 1"
+						description="Содержание 1" />
+					<field name="img2" type="media"
+						label="Изображение 2"
+						description="Изображение 2"	/>
+					<field name="img-other2" type="media"
+						label="Изображение 1"
+						description="Изображение 1"	/>
+					<field name="name2" type="text"
+						label="Название 2"
+						description="Название 2"	/>
+					<field name="text2" type="text"
+						label="Содержание 2"
+						description="Содержание 2" />
+					<field name="img3" type="media"
+						label="Изображение 3"
+						description="Изображение 3"	/>
+					<field name="img-other3" type="media"
+						label="Изображение 1"
+						description="Изображение 1"	/>
+					<field name="name3" type="text"
+						label="Название 3"
+						description="Название 3"	/>
+					<field name="text3" type="text"
+						label="Содержание 3"
+						description="Содержание 3" />
+					<field name="img4" type="media"
+						label="Изображение 4"
+						description="Изображение 4"	/>
+					<field name="img-other4" type="media"
+						label="Изображение 1"
+						description="Изображение 1"	/>
+					<field name="name4" type="text"
+						label="Название 4"
+						description="Название 4"	/>
+					<field name="text4" type="text"
+						label="Содержание 4"
+						description="Содержание 4" />
+					<field name="img5" type="media"
+						label="Изображение 5"
+						description="Изображение 5"	/>
+					<field name="img-other5" type="media"
+						label="Изображение 1"
+						description="Изображение 1"	/>
+					<field name="name5" type="text"
+						label="Название 5"
+						description="Название 5"	/>
+					<field name="text5" type="text"
+						label="Содержание 5"
+						description="Содержание 5" />
+					<field name="img6" type="media"
+						label="Изображение 6"
+						description="Изображение 6"	/>
+					<field name="img-other6" type="media"
+						label="Изображение 1"
+						description="Изображение 1"	/>
+					<field name="name6" type="text"
+						label="Название 6"
+						description="Название 6"	/>
+					<field name="text6" type="text"
+						label="Содержание 6"
+						description="Содержание 6" />
+				</fieldset>
+				<fieldset name="advanced">
+					<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				</fieldset>
+			</fields>
+        </config>
+
+</extension>

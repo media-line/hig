@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>mod_slider_gr</name>
+        <creationDate>May 2015</creationDate>
+        <author>gordoney</author>
+        <authorEmail>sergeibolonikov@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description>slider_gr</description>
+        <files>
+                <filename module="mod_slider_gr">mod_slider_gr.php</filename>
+                <filename>mod_slider_gr.xml</filename>
+				<filename>index.html</filename>
+				<filename>helper.php</filename>
+				<folder>tmpl</folder>
+				<folder>js</folder>
+        </files>
+	    <config>
+            <fields name="params">
+			    <fieldset name="slide1" label="Слайд 1">
+					<field name="image1" type="media"
+						label="Изображение"
+						description="Изображение"	/>
+					<field name="up1" type="editor"
+						label="Заголовок"
+						description="Заголовок"	/>
+					<field name="down1" type="editor"
+						label="Текст"
+						description="Текст"	/>
+					<field name="url1" type="text"
+						label="Ссылка"
+						description="Ссылка"	/>
+				</fieldset>
+			    <fieldset name="slide2" label="Слайд 2">
+					<field name="image2" type="media"
+						label="Изображение"
+						description="Изображение"	/>
+					<field name="up2" type="editor"
+						label="Заголовок"
+						description="Заголовок"	/>
+					<field name="down2" type="editor"
+						label="Текст"
+						description="Текст"	/>
+					<field name="url2" type="text"
+						label="Ссылка"
+						description="Ссылка"	/>
+				</fieldset>
+			    <fieldset name="slide3" label="Слайд 3">
+					<field name="image3" type="media"
+						label="Изображение"
+						description="Изображение"	/>
+					<field name="up3" type="editor"
+						label="Заголовок"
+						description="Заголовок"	/>
+					<field name="down3" type="editor"
+						label="Текст"
+						description="Текст"	/>
+					<field name="url3" type="text"
+						label="Ссылка"
+						description="Ссылка"	/>
+				</fieldset>
+			    <fieldset name="slide4" label="Слайд 4">
+					<field name="image4" type="media"
+						label="Изображение"
+						description="Изображение"	/>
+					<field name="up4" type="editor"
+						label="Заголовок"
+						description="Заголовок"	/>
+					<field name="down4" type="editor"
+						label="Текст"
+						description="Текст"	/>
+					<field name="url4" type="text"
+						label="Ссылка"
+						description="Ссылка"	/>
+				</fieldset>
+			    <fieldset name="slide5" label="Слайд 5">
+					<field name="image5" type="media"
+						label="Изображение"
+						description="Изображение"	/>
+					<field name="up5" type="editor"
+						label="Заголовок"
+						description="Заголовок"	/>
+					<field name="down5" type="editor"
+						label="Текст"
+						description="Текст"	/>
+					<field name="url5" type="text"
+						label="Ссылка"
+						description="Ссылка"	/>
+				</fieldset>			
+				<fieldset name="advanced">
+					<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				</fieldset>
+			</fields>
+        </config>
+
+</extension>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>Последние работы</name>
+        <creationDate>2015</creationDate>
+        <author>gordoney</author>
+        <authorEmail>sergeibolonikov@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description>Последние работы</description>
+        <files>
+                <filename module="mod_latest_works">mod_latest_works.php</filename>
+                <filename>mod_latest_works.xml</filename>
+        </files>
+	    <config>
+            <fields name="params">
+			    <fieldset name="basic">
+					<field name="logo1" type="media"
+						label="Логотип 1"
+						description="Логотип 1"	/>
+					<field name="name1" type="text"
+						label="Название 1"
+						description="Название 1"	/>
+					<field name="text1" type="text"
+						label="Текст 1"
+						description="Текст 1"	/>
+					<field name="logo2" type="media"
+						label="Логотип 2"
+						description="Логотип 2"	/>
+					<field name="name2" type="text"
+						label="Название 2"
+						description="Название 2"	/>
+					<field name="text2" type="text"
+						label="Текст 2"
+						description="Текст 2"	/>
+					<field name="logo3" type="media"
+						label="Логотип 3"
+						description="Логотип 3"	/>
+					<field name="name3" type="text"
+						label="Название 3"
+						description="Название 3"	/>
+					<field name="text3" type="text"
+						label="Текст 3"
+						description="Текст 3"	/>
+					<field name="logo4" type="media"
+						label="Логотип 4"
+						description="Логотип 4"	/>
+					<field name="name4" type="text"
+						label="Название 4"
+						description="Название 4"	/>
+					<field name="text4" type="text"
+						label="Текст 4"
+						description="Текст 4"	/>
+					<!--<field name="logo5" type="media"
+						label="Логотип 5"
+						description="Логотип 5"	/>
+					<field name="name5" type="text"
+						label="Название 5"
+						description="Название 5"	/>
+					<field name="text5" type="text"
+						label="Текст 5"
+						description="Текст 5"	/>-->
+				</fieldset>
+				<fieldset name="advanced">
+					<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				</fieldset>
+			</fields>
+        </config>
+
+</extension>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 3/0//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/3.0/template-install.dtd">
+<extension version="2.5"
+type="template"
+client="site">
+
+	<name>hig</name>
+	<version>1.0</version>
+	<creationDate>27/11/2015</creationDate>
+	<author>Bolonikov Sergei</author>
+	<authorEmail>sergeibolonikov@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>GNU/GPL</copyright>
+	<description>hig</description>
+	
+	<files>
+		<folder>css</folder>
+		<filename>index.php</filename>
+	</files>
+	
+	<positions>
+        <position>header_logo</position>
+		<position>header_contacts</position>
+        <position>header_search</position>
+		<position>header_menu</position>
+		<position>slider</position>
+		<position>main_category</position>
+		<position>main_plus</position>
+		<position>slider_partners</position>
+		<position>header_logo_fixed</position>
+		<position>header_contacts_fixed</position>
+		<position>header_form_fixed</position>
+		<position>breadcrumbs</position>
+		<position>joomshopping_menu</position>
+		<position>joomshopping_order</position>
+		<position>about_menu</position>
+		<position>page_contacts</position>
+		<position>header_logo_name</position>
+		<position>latest_works</position>
+		<position>after_product</position>
+	</positions>
+	
+</extension>
