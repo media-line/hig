@@ -36,7 +36,7 @@ defined('_JEXEC') or die; ?>
 
 <?php $menuitemid = JRequest::getInt( 'Itemid' ); 
 if ($menuitemid) {
-	$menu = JSite::getMenu();
+    $menu = JFactory::getApplication()->getMenu();
 	$bodysuffix = $menu->getParams( $menuitemid )->get('pageclass_sfx');
 } 
 
