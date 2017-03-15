@@ -366,7 +366,7 @@ table {
 }
 
 
-/* Категории на главной */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 #main_category h3, #slider_partners h3, #main_plus h3,
 #main_category .mod_name, #slider_partners .mod_name, #main_plus .mod_name {
   text-align: center;
@@ -612,7 +612,7 @@ table {
 }
 
 
-/* Плюсы на главной */
+/* пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 .mod_plus_block {
   float: left;
   height: 490px;
@@ -676,7 +676,7 @@ table {
 .mod_plus_img {
   height: 135px;
 }
-/*переворот*/
+/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
 .flip-container:hover .front{
   visibility: hidden;
 }
@@ -806,7 +806,7 @@ table {
 }
 
 
-/* модальное окно */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ */
 .modal .modal-content {
   border-radius: 0px;
 }
@@ -899,7 +899,7 @@ table {
 }
 
 
-/*  хлебные крошки  */
+/*  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ  */
 .breadcrumb {
   background-color: transparent;
   padding: 0;
@@ -1118,7 +1118,7 @@ a.pagenav:hover  {
 }
 
 
-/*  Страница контактов  */
+/*  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  */
 .mod_contacts_page_block {
   float: left;
   width: 25%;
@@ -1343,7 +1343,7 @@ a.pagenav:hover  {
 
 
 
-/* Клиенты */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 .clients .span2 {
   float: left;
   width: 16.6%;
@@ -1419,7 +1419,7 @@ a.pagenav:hover  {
 }
 
 
-/* последние работы */
+/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ */
 .mod_latest_works_block {
   float: left;
   width: 49%;

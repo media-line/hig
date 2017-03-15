@@ -4,18 +4,26 @@
 type="template"
 client="site">
 
-	<name>hig</name>
+	<name>hignew</name>
 	<version>1.0</version>
 	<creationDate>27/11/2015</creationDate>
-	<author>Bolonikov Sergei</author>
-	<authorEmail>sergeibolonikov@gmail.com</authorEmail>
+	<author>Andrei Krauchanka</author>
+	<authorEmail>akravchenko@medialine.by</authorEmail>
 	<authorUrl></authorUrl>
 	<copyright>GNU/GPL</copyright>
-	<description>hig</description>
+	<description>hignew</description>
 	
 	<files>
-		<folder>css</folder>
 		<filename>index.php</filename>
+		<filename>templateDetalis.xml</filename>
+		<filename>favicon.ico</filename>
+		<filename>error.php</filename>
+
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
 	</files>
 	
 	<positions>

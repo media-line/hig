@@ -5,17 +5,20 @@
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-defined('_JEXEC') or die; ?>
+defined('_JEXEC') or die;
+$app = Jfactory::getApplication();
+?>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
 
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	<script type="text/javascript">
+
+    <script type="text/javascript">
 		jQuery.noConflict();
 	</script>
 	
@@ -33,7 +36,6 @@ defined('_JEXEC') or die; ?>
 	
 	<link rel="icon" type="image/vnd.microsoft.icon" href="templates/hig/favicon.ico">
 </head>
-
 <?php $menuitemid = JRequest::getInt( 'Itemid' ); 
 if ($menuitemid) {
     $menu = JFactory::getApplication()->getMenu();
@@ -48,42 +50,29 @@ if (JURI::current() == JURI::base()) {
 ?>
 	
 <body class="body <?php print_r($bodysuffix); ?>">
-	
+<div class="container">
     <div id="header">
-	    <div class="header_info">
-			<div class="container-fluid clearfix">
-			    <div class="header header_logo">
-				    <?php if (!$mainpage) { echo '<a href="/">'; } ?><jdoc:include type="modules" name="header_logo" style="xhtmlgr" /><?php if (!$mainpage) { echo '</a>'; } ?>
-				</div>
-			    <div class="header header_contacts">
-				    <jdoc:include type="modules" name="header_contacts" style="xhtmlgr" />
-					<div class="name"><jdoc:include type="modules" name="header_logo_name" style="xhtmlgr" /></div>
-				</div>
-			    <div class="header_search">
-				    <jdoc:include type="modules" name="header_search" style="xhtmlgr" />
-				</div>				
-			</div>				
-		</div>	
-		<div class="header_menu">
-			<div class="container-fluid clearfix">		
-                <jdoc:include type="modules" name="header_menu" style="xhtmlgr" />
-			</div>
-		</div>	
-	</div>
-
-	<div class="fixed-header">
-		<div class="container-fluid clearfix">	
-			<div class="header_fixed header_logo_fixed">			
-                <?php if (!$mainpage) { echo '<a href="/">'; } ?><jdoc:include type="modules" name="header_logo_fixed" style="xhtmlgr" /><?php if (!$mainpage) { echo '</a>'; } ?>
-		    </div>
-			<div class="header_fixed header_contacts_fixed">			
-                <jdoc:include type="modules" name="header_contacts_fixed" style="xhtmlgr" />
-		    </div>
-			<div class="header_fixed header_header_form_fixed">			
+        <div class="top_header row">
+            <div class="top_name col-md-4">
+                <jdoc:include type="modules" name="header_logo_name" style="xhtmlgr" />
+            </div>
+            <div class="header_contacts col-md-4">
+                <jdoc:include type="modules" name="header_contacts" style="xhtmlgr" />
+            </div>
+            <div class="header_form col-md-4">
                 <jdoc:include type="modules" name="header_form_fixed" style="xhtmlgr" />
-		    </div>
-	    </div>    
+            </div>
+        </div>
+        <div class="bottom_header row">
+            <div class="header_logo">
+                <?php if (!$mainpage) { echo '<a href="/">'; } ?><jdoc:include type="modules" name="header_logo" style="xhtmlgr" /><?php if (!$mainpage) { echo '</a>'; } ?>
+            </div>
+            <div class="header_menu">
+                <jdoc:include type="modules" name="header_menu" style="xhtmlgr" />
+            </div>
+        </div>
 	</div>
+</div>
 	
 	<?php if ($this->countModules('slider')) { ?>
 		<div id="slider">
@@ -173,6 +162,7 @@ if (JURI::current() == JURI::base()) {
   ga('create', 'UA-71852932-1', 'auto');
   ga('send', 'pageview');
 
-</script>	
+</script>
+
 </body>
 </html>
