@@ -48,121 +48,38 @@ if (JURI::current() == JURI::base()) {
 }
 
 ?>
-	
+
 <body class="body <?php print_r($bodysuffix); ?>">
+
 <div class="container">
     <div id="header">
-        <div class="top_header row">
-            <div class="top_name col-md-4">
-                <jdoc:include type="modules" name="header_logo_name" style="xhtmlgr" />
-            </div>
-            <div class="header_contacts col-md-4">
-                <jdoc:include type="modules" name="header_contacts" style="xhtmlgr" />
-            </div>
-            <div class="header_form col-md-4">
-                <jdoc:include type="modules" name="header_form_fixed" style="xhtmlgr" />
-            </div>
+        <div class="logoname">
+            <img src="templates/hignew/images/logonew.png" />
         </div>
-        <div class="bottom_header row">
-            <div class="header_logo">
-                <?php if (!$mainpage) { echo '<a href="/">'; } ?><jdoc:include type="modules" name="header_logo" style="xhtmlgr" /><?php if (!$mainpage) { echo '</a>'; } ?>
+        <div class="allheader">
+            <div class="top_header">
+                <div class="header_contacts">
+                    <jdoc:include type="modules" name="header_contacts" style="xhtmlgr" />
+                </div>
+                <div class="header_form">
+                    <jdoc:include type="modules" name="header_form_fixed" style="xhtmlgr" />
+                </div>
             </div>
             <div class="header_menu">
                 <jdoc:include type="modules" name="header_menu" style="xhtmlgr" />
             </div>
         </div>
+
 	</div>
 </div>
 	
-	<?php if ($this->countModules('slider')) { ?>
-		<div id="slider">
-            <jdoc:include type="modules" name="slider" style="xhtmlgr" />
-		</div>		
-	<?php } ?>
-
-	<?php if ($this->countModules('main_category')) { ?>
-		<div id="main_category">
-			<div class="container-fluid clearfix">
-                <jdoc:include type="modules" name="main_category" style="xhtmlgr" />
-			</div>
-		</div>		
-	<?php } ?>
-
-	<?php if ($this->countModules('slider_partners')) { ?>
-		<div id="main_plus">
-			<div class="container-fluid clearfix">
-                <jdoc:include type="modules" name="main_plus" style="xhtmlgr" />
-			</div>
-		</div>		
-	<?php } ?>	
-	
-	<?php if ($this->countModules('slider_partners')) { ?>
-		<div id="slider_partners">
-			<div class="container-fluid clearfix">
-                <jdoc:include type="modules" name="slider_partners" style="xhtmlgr" />
-			</div>
-		</div>		
-	<?php } ?>	
-	
-	<div id="content">
-		<div class="container-fluid">
-			<?php if ($_SERVER['REQUEST_URI'] != '/') { ?>
-				<div class="lift_bottom lift_button"><img src="/images/lift_bottom.png" alt=""></div>
-				<div class="lift_top lift_button"><img src="/images/lift_top.png" alt=""></div>
-			<?php } ?>
-			<jdoc:include type="message" /> 
-			<jdoc:include type="component" style="xhtmlgr" />	
-		</div>
-	</div>	
-	
-    <div id="footer">
-        <div class="container-fluid clearfix">
-			<?php if(JURI::current() !== JURI::base()){?>
-				<span>Разработка сайта: </span><a target="_blank" rel="nofollow" href="http://www.medialine.by/">MediaLine</a>
-			<?php } else { ?>	
-				<span>Разработка сайта: </span><a target="_blank" href="http://www.medialine.by/">MediaLine</a>
-			<?php } ?>
-		</div>	
-	</div>			
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter34486050 = new Ya.Metrika({id:34486050,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/34486050" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71852932-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 </body>
 </html>
+<svg>
+    <defs>
+        <clipPath id="clipping">
+            <circle cx="85" cy="85" r="85" />
+        </clipPath>
+    </defs>
+</svg>
