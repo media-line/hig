@@ -1,8 +1,5 @@
 body {
   font-family: 'ProximaNova-Regular' !important;
-  background: url(../images/footer.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
   color: #6C6C6C;
 }
 body.mainpage #content {
@@ -12,6 +9,15 @@ body.mainpage #content {
 body.mainpage #content .page-header {
   display: none;
 }
+
+.row::before {
+    content: normal;
+}
+
+.row::after {
+    content: normal;
+}
+
 @font-face {
   font-family: 'ProximaNova-Regular';
   src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/ProximaNova-Regular.otf')  format('opentype'),
@@ -41,7 +47,7 @@ body.mainpage #content .page-header {
   padding-bottom: 15px;
 }
 .container-fluid {
-  width: 1260px;
+  /*width: 1260px;*/
   position: relative;
   padding-right: 5px;
   padding-left: 5px;
@@ -53,9 +59,10 @@ a:hover {
   font-weight: bold;
 }
 .page-header {
-  margin: 0;
-  border-bottom: 0;
-  padding: 0;
+    margin: 0;
+    border-bottom: 0;
+    padding: 0;
+    z-index: 10;
 }
 .div_h2 {
   font-size: 28px;
@@ -97,29 +104,77 @@ table {
 
 /* header */
 #header {
-  background: url(../images/header_bg.jpg);
-  background-position: center center;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
-.header {
-  float: left;
+
+.logoname {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
 }
+
+.name {
+    color: #fff;
+    background-color: #09afe1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 40px;
+    font-size: 28px;
+    height: 46px;
+    margin-left: -98px;
+    z-index: 10;
+}
+
+
+.top_header {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 60%;
+    height: 56px;
+}
+
+.top_name {
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 24px;
+    padding-left: 12%;
+}
+
+.bottom_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .header_info {
   padding: 15px 0;
 }
+
 .header_contacts {
-  margin-top: 25px;
+    width: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 100;
 }
+
 .mod_header_contacts_gr > div {
-  float: left;
-  font-size: 22.75px;
-  color: #6C6C6C;
-  margin-left: 45px;
+
 }
+
 .mod_header_contacts_gr > div:nth-child(2) {
   margin-top: 2px;
 }
 .mod_header_contacts_gr a {
-  color: #6C6C6C;
+  color: #0171cf;
   text-decoration: none;
 }
 .mod_header_contacts_gr span{
@@ -135,8 +190,7 @@ table {
   max-width: 28px;
 }
 .mod_header_contacts_gr_logo {
-  height: 40px;
-  margin-bottom: 10px;
+
 }
 .header_search {
   position: absolute;
@@ -266,7 +320,7 @@ table {
   color: white !important; 
 }
 .header_menu {
-  position: relative;
+
 }
 
 
@@ -408,6 +462,11 @@ table {
 .mod_main_category_img {
   text-align: center;
 }
+
+.mod_main_category0 {
+    width: 20% !important;
+}
+
 .mod_main_category1, .mod_main_category6{
   width: 50%;
 }
@@ -798,11 +857,33 @@ table {
   background-color: #0171CF;
   color: white;
 }
+
+.header_logo {
+    background-color: #0ba6dc;
+    border-radius: 85px;
+}
+
+.logo {
+    clip-path: url(#clipping);
+    background-color: #09afe1;
+    padding-right: 3px;
+    padding-top: 9px;
+}
+
+.header_logo img {
+    background-position: top right;
+}
+
 .header_logo_fixed {
   padding: 0 107px;
 }
+
 .header_header_form_fixed {
   margin-left: 20px;
+}
+
+.header_form {
+    width: 50%;
 }
 
 
@@ -1576,3 +1657,36 @@ a.pagenav:hover  {
 #comjshop_list_product {
   padding-bottom: 30px;
 }
+
+.advantage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advant {
+    width: 16.6%;
+    margin: 0 2%;
+}
+
+    .advant img {
+        width: 100%;
+        transition: 1s;
+    }
+
+    .advant p {
+        color: #0171cf;
+        text-align: center;
+        transition: 1s;
+    }
+
+    .advant:hover img {
+        transform: scale(1.2);
+        transition: 1s;
+    }
+
+    .advant:hover p {
+        color: #2183d5;
+        transform: scale(1.2);
+        transition: 1s;
+    }

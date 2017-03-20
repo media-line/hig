@@ -11,7 +11,7 @@
 defined('_JEXEC') or die;
 
 	
-	$document =  & JFactory::getDocument();
+	$document = JFactory::getDocument();
 	$document->addScript(JURI::root(true) . "/modules/mod_order_gr/order.js");	
 
 	require JModuleHelper::getLayoutPath('mod_order_gr', $params->get('layout', 'default'));

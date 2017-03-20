@@ -13,51 +13,9 @@
 	    <config>
             <fields name="params">
 			    <fieldset name="basic">
-					<field name="logo1" type="media"
-						label="Скайп"
-						description="Скайп"	/>
 					<field name="text1" type="text"
-						label="Скайп"
-						description="Скайп"	/>
-					<field name="logo2" type="media"
-						label="Viber"
-						description="Viber"	/>
-					<field name="text2" type="text"
-						label="Viber"
-						description="Viber"	/>
-					<field name="text2_viber" type="text"
-						label="Viber (для вайбера)"
-						description="Viber (для вайбера)"	/>
-					<field name="logo3" type="media"
-						label="Изображение 3"
-						description="Изображение 3"	/>
-					<field name="text3" type="text"
-						label="Текст 3"
-						description="Текст 3"	/>
-					<field name="logo4" type="media"
-						label="Изображение 4"
-						description="Изображение 4"	/>
-					<field name="text4" type="text"
-						label="Текст 4"
-						description="Текст 4"	/>
-					<field name="logo5" type="media"
-						label="Изображение 5"
-						description="Изображение 5"	/>
-					<field name="text5" type="text"
-						label="Текст 5"
-						description="Текст 5"	/>
-					<field name="logo6" type="media"
-						label="Изображение 6"
-						description="Изображение 6"	/>
-					<field name="text6" type="text"
-						label="Текст 6"
-						description="Текст 6"	/>
-					<field name="logo7" type="media"
-						label="Почта"
-						description="Почта"	/>
-					<field name="text7" type="text"
-						label="Почта"
-						description="Почта"	/>
+						label="Номер телефона"
+						description="Номер телефона"	/>
 				</fieldset>
 				<fieldset name="advanced">
 					<field
