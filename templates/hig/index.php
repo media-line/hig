@@ -100,14 +100,14 @@ if (JURI::current() == JURI::base()) {
 	<?php } ?>
 
 	<?php if ($this->countModules('slider_partners')) { ?>
-		<div id="main_plus">
-			<div class="container-fluid clearfix">
+        <div id="main_plus">
+            <div class="container-fluid clearfix">
                 <jdoc:include type="modules" name="main_plus" style="xhtmlgr" />
-			</div>
-		</div>		
-	<?php } ?>	
-	
-	<?php if ($this->countModules('slider_partners')) { ?>
+            </div>
+        </div>
+    <?php } ?>
+
+    <?php if ($this->countModules('slider_partners')) { ?>
 		<div id="slider_partners">
 			<div class="container-fluid clearfix">
                 <jdoc:include type="modules" name="slider_partners" style="xhtmlgr" />

@@ -69,17 +69,84 @@ if (JURI::current() == JURI::base()) {
                 <jdoc:include type="modules" name="header_menu" style="xhtmlgr" />
             </div>
         </div>
-
 	</div>
 </div>
-	
+
+<?php if ($this->countModules('slider')) { ?>
+    <div id="slider">
+        <jdoc:include type="modules" name="slider" style="xhtmlgr" />
+    </div>
+<?php } ?>
+
+<?php if ($this->countModules('main_category')) { ?>
+    <div class="container">
+        <div id="main_category">
+            <div class="container-fluid clearfix">
+                <jdoc:include type="modules" name="main_category" style="xhtmlgr" />
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
+<div class="container">
+    <?php if ($this->countModules('slider_production')) { ?>
+        <div id="slider_partners">
+            <div class="container-fluid clearfix">
+                <jdoc:include type="modules" name="slider_production" style="xhtmlgr" />
+            </div>
+        </div>
+    <?php } ?>
+</div>
+
+<div class="container">
+    <h1>Преимущества</h1>
+    <div class="advantage row">
+        <div class="advant">
+            <img src="/templates/hignew/images/advantage/rb.png" />
+            <p>Произведено в РБ</p>
+        </div>
+        <div class="advant">
+            <img src="/templates/hignew/images/advantage/key.png" />
+            <p>Выполнение проектов под ключ</p>
+        </div>
+        <div class="advant" >
+            <img src="/templates/hignew/images/advantage/check.png" />
+            <p>Внедрена система качества СТБ ISO 9001-2009</p>
+        </div>
+        <div class="advant">
+            <img src="/templates/hignew/images/advantage/oclock.png" />
+            <p>Срок производства от 2 до 30 дней</p>
+        </div>
+        <div class="advant">
+            <img src="/templates/hignew/images/advantage/shipping.png" />
+            <p>Доставка до объекта в течение 24 часов</p>
+        </div>
+        <div class="advant">
+            <img src="/templates/hignew/images/advantage/shield.png" />
+            <p>Гарантия качества 24 месяца</p>
+        </div>
+    </div>
+</div>
+
+<div class="conteiner">
+    <?php if ($this->countModules('slider_partners')) { ?>
+        <div id="slider_partners">
+            <div class="container-fluid clearfix">
+                <jdoc:include type="modules" name="slider_partners" style="xhtmlgr" />
+            </div>
+        </div>
+    <?php } ?>
+</div>
+
+<div id="footer">
+    <div class="container-fluid clearfix">
+        <?php if(JURI::current() !== JURI::base()){?>
+            <span>Разработка сайта: </span><a target="_blank" rel="nofollow" href="http://www.medialine.by/">MediaLine</a>
+        <?php } else { ?>
+            <span>Разработка сайта: </span><a target="_blank" href="http://www.medialine.by/">MediaLine</a>
+        <?php } ?>
+    </div>
+</div>
 
 </body>
 </html>
-<svg>
-    <defs>
-        <clipPath id="clipping">
-            <circle cx="85" cy="85" r="85" />
-        </clipPath>
-    </defs>
-</svg>

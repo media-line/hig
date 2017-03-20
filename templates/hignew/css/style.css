@@ -47,7 +47,7 @@ body.mainpage #content .page-header {
   padding-bottom: 15px;
 }
 .container-fluid {
-  width: 1260px;
+  /*width: 1260px;*/
   position: relative;
   padding-right: 5px;
   padding-left: 5px;
@@ -59,9 +59,10 @@ a:hover {
   font-weight: bold;
 }
 .page-header {
-  margin: 0;
-  border-bottom: 0;
-  padding: 0;
+    margin: 0;
+    border-bottom: 0;
+    padding: 0;
+    z-index: 10;
 }
 .div_h2 {
   font-size: 28px;
@@ -116,6 +117,7 @@ table {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 100;
 }
 
 .name {
@@ -460,6 +462,11 @@ table {
 .mod_main_category_img {
   text-align: center;
 }
+
+.mod_main_category0 {
+    width: 20% !important;
+}
+
 .mod_main_category1, .mod_main_category6{
   width: 50%;
 }
@@ -1650,3 +1657,36 @@ a.pagenav:hover  {
 #comjshop_list_product {
   padding-bottom: 30px;
 }
+
+.advantage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advant {
+    width: 16.6%;
+    margin: 0 2%;
+}
+
+    .advant img {
+        width: 100%;
+        transition: 1s;
+    }
+
+    .advant p {
+        color: #0171cf;
+        text-align: center;
+        transition: 1s;
+    }
+
+    .advant:hover img {
+        transform: scale(1.2);
+        transition: 1s;
+    }
+
+    .advant:hover p {
+        color: #2183d5;
+        transform: scale(1.2);
+        transition: 1s;
+    }
