@@ -16,5 +16,4 @@ class modSliderPartnersHelper
 	    $sliderArr = json_decode($params->get('list_images'))->logo;
 		return $sliderArr;
     }
-     
 }

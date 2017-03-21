@@ -128,7 +128,7 @@ if (JURI::current() == JURI::base()) {
     </div>
 </div>
 
-<div class="conteiner">
+<div class="container">
     <?php if ($this->countModules('slider_partners')) { ?>
         <div id="slider_partners">
             <div class="container-fluid clearfix">
@@ -136,6 +136,19 @@ if (JURI::current() == JURI::base()) {
             </div>
         </div>
     <?php } ?>
+</div>
+
+<div class="container">
+    <div id="content">
+        <div class="container-fluid">
+            <?php if ($_SERVER['REQUEST_URI'] != '/') { ?>
+                <div class="lift_bottom lift_button"><img src="/images/lift_bottom.png" alt=""></div>
+                <div class="lift_top lift_button"><img src="/images/lift_top.png" alt=""></div>
+            <?php } ?>
+            <jdoc:include type="message" />
+            <jdoc:include type="component" style="xhtmlgr" />
+        </div>
+    </div>
 </div>
 
 <div id="footer">
