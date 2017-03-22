@@ -67,6 +67,105 @@
 					<field name="url6" type="text"
 						label="Ссылка 6"
 						description="Ссылка 6" />
+                    <field name="img7" type="media"
+                           label="Изображение 7"
+                           description="Изображение 7"	/>
+                    <field name="name7" type="text"
+                           label="Название 7"
+                           description="Название 7"	/>
+                    <field name="url7" type="text"
+                           label="Ссылка 7"
+                           description="Ссылка 7" />
+                    <field name="img8" type="media"
+                           label="Изображение 8"
+                           description="Изображение 8"	/>
+                    <field name="name8" type="text"
+                           label="Название 8"
+                           description="Название 8"	/>
+                    <field name="url8" type="text"
+                           label="Ссылка 8"
+                           description="Ссылка 8" />
+                    <field name="img9" type="media"
+                           label="Изображение 9"
+                           description="Изображение 9"	/>
+                    <field name="name9" type="text"
+                           label="Название 9"
+                           description="Название 9"	/>
+                    <field name="url9" type="text"
+                           label="Ссылка 9"
+                           description="Ссылка 9" />
+                    <field name="img10" type="media"
+                           label="Изображение 10"
+                           description="Изображение 10"	/>
+                    <field name="name10" type="text"
+                           label="Название 10"
+                           description="Название 10"	/>
+                    <field name="url10" type="text"
+                           label="Ссылка 10"
+                           description="Ссылка 10" />
+                    <field name="img11" type="media"
+                           label="Изображение 11"
+                           description="Изображение 11"	/>
+                    <field name="name11" type="text"
+                           label="Название 11"
+                           description="Название 11"	/>
+                    <field name="url11" type="text"
+                           label="Ссылка 11"
+                           description="Ссылка 11" />
+                    <field name="img12" type="media"
+                           label="Изображение 12"
+                           description="Изображение 12"	/>
+                    <field name="name12" type="text"
+                           label="Название 12"
+                           description="Название 12"	/>
+                    <field name="url12" type="text"
+                           label="Ссылка 12"
+                           description="Ссылка 12" />
+                    <field name="img13" type="media"
+                           label="Изображение 13"
+                           description="Изображение 13"	/>
+                    <field name="name13" type="text"
+                           label="Название 13"
+                           description="Название 13"	/>
+                    <field name="url13" type="text"
+                           label="Ссылка 13"
+                           description="Ссылка 13" />
+                    <field name="img14" type="media"
+                           label="Изображение 14"
+                           description="Изображение 14"	/>
+                    <field name="name14" type="text"
+                           label="Название 14"
+                           description="Название 14"	/>
+                    <field name="url14" type="text"
+                           label="Ссылка 14"
+                           description="Ссылка 14" />
+                    <field name="img15" type="media"
+                           label="Изображение 15"
+                           description="Изображение 15"	/>
+                    <field name="name15" type="text"
+                           label="Название 15"
+                           description="Название 15"	/>
+                    <field name="url15" type="text"
+                           label="Ссылка 15"
+                           description="Ссылка 15" />
+                    <field name="img16" type="media"
+                           label="Изображение 16"
+                           description="Изображение 16"	/>
+                    <field name="name16" type="text"
+                           label="Название 16"
+                           description="Название 16"	/>
+                    <field name="url16" type="text"
+                           label="Ссылка 16"
+                           description="Ссылка 16" />
+                    <field name="img17" type="media"
+                           label="Изображение 17"
+                           description="Изображение 17"	/>
+                    <field name="name17" type="text"
+                           label="Название 17"
+                           description="Название 17"	/>
+                    <field name="url17" type="text"
+                           label="Ссылка 17"
+                           description="Ссылка 17" />
 				</fieldset>
 				<fieldset name="advanced">
 					<field
