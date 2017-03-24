@@ -35,6 +35,7 @@ $app = Jfactory::getApplication();
     <script src='https://www.google.com/recaptcha/api.js'></script>	
 	
 	<link rel="icon" type="image/vnd.microsoft.icon" href="templates/hig/favicon.ico">
+
 </head>
 <?php $menuitemid = JRequest::getInt( 'Itemid' ); 
 if ($menuitemid) {
@@ -54,7 +55,7 @@ if (JURI::current() == JURI::base()) {
 <div class="container">
     <div id="header">
         <div class="logoname">
-            <img src="templates/hignew/images/logonew.png" />
+            <img class="logo" src="templates/hignew/images/logonew.png" />
         </div>
         <div class="allheader">
             <div class="top_header">
@@ -78,15 +79,15 @@ if (JURI::current() == JURI::base()) {
     </div>
 <?php } ?>
 
-<?php if ($this->countModules('main_category')) { ?>
-    <div class="container">
+<div class="container">
+    <?php if ($this->countModules('main_category')) { ?>
         <div id="main_category">
             <div class="container-fluid clearfix">
                 <jdoc:include type="modules" name="main_category" style="xhtmlgr" />
             </div>
         </div>
-    </div>
-<?php } ?>
+    <?php } ?>
+</div>
 
 <div class="container">
     <?php if ($this->countModules('slider_production')) { ?>
@@ -99,33 +100,13 @@ if (JURI::current() == JURI::base()) {
 </div>
 
 <div class="container">
-    <h1>Преимущества</h1>
-    <div class="advantage row">
-        <div class="advant">
-            <img src="/templates/hignew/images/advantage/rb.png" />
-            <p>Произведено в РБ</p>
+    <?php if ($this->countModules('main_plus')) { ?>
+        <div id="slider_partners">
+            <div class="container-fluid clearfix">
+                <jdoc:include type="modules" name="main_plus" style="xhtmlgr" />
+            </div>
         </div>
-        <div class="advant">
-            <img src="/templates/hignew/images/advantage/key.png" />
-            <p>Выполнение проектов под ключ</p>
-        </div>
-        <div class="advant" >
-            <img src="/templates/hignew/images/advantage/check.png" />
-            <p>Внедрена система качества СТБ ISO 9001-2009</p>
-        </div>
-        <div class="advant">
-            <img src="/templates/hignew/images/advantage/oclock.png" />
-            <p>Срок производства от 2 до 30 дней</p>
-        </div>
-        <div class="advant">
-            <img src="/templates/hignew/images/advantage/shipping.png" />
-            <p>Доставка до объекта в течение 24 часов</p>
-        </div>
-        <div class="advant">
-            <img src="/templates/hignew/images/advantage/shield.png" />
-            <p>Гарантия качества 24 месяца</p>
-        </div>
-    </div>
+    <?php } ?>
 </div>
 
 <div class="container">
@@ -160,6 +141,6 @@ if (JURI::current() == JURI::base()) {
         <?php } ?>
     </div>
 </div>
-
+<script src="/templates/hignew/js/ltlfunction.js" type="text/javascript"></script>
 </body>
 </html>
