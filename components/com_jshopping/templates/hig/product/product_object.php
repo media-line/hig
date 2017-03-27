@@ -20,12 +20,15 @@ foreach ($cats as $category) {
 ?>
 <div class="jshop productfull" id="comjshop">
     <form class="clearfix" name="product" method="post" action="<?php print $this->action?>" enctype="multipart/form-data" autocomplete="off">
+
+        <?php jimport( 'joomla.application.module.helper' );
+        $module = JModuleHelper::getModules('breadcrumbs');
+        $attribs['style'] = 'xhtml';
+        echo JModuleHelper::renderModule($module[0], $attribs); ?>
+
         <div class="div_h1"><?php echo $categoryName;?><?php if ($this->config->show_product_code){?> <span class="jshop_code_prod">(<?php print _JSHOP_EAN?>: <span id="product_code"><?php print $this->product->getEan();?></span>)</span><?php }?></div>
 
-		<?php jimport( 'joomla.application.module.helper' ); 
-		$module = JModuleHelper::getModules('breadcrumbs'); 
-		$attribs['style'] = 'xhtml'; 
-		echo JModuleHelper::renderModule($module[0], $attribs); ?> 
+
 
 		
         <div class="joomshopping_full_block joomshopping_full_object">	
@@ -49,7 +52,7 @@ foreach ($cats as $category) {
 					<?php }?>
 					
 					<div class="extra_fields_el">
-						<span class="extra_fields_name"><?php print $extra_field['name'];?></span><?php if ($extra_field['description']){?> 
+						<span class="extra_fields_name"><?php print $extra_field['name'];?></span><?php if ($extra_field['description']){?>
 							<span class="extra_fields_description">
 								<?php print $extra_field['description'];?>
 							</span><?php } ?>:
@@ -63,8 +66,22 @@ foreach ($cats as $category) {
 					<?php }?>
 				<?php }?>
 				</div>
-			<?php }?>	
+			<?php }?>
 
+            <!-- слайдер в Объектах -->
+            <div class="container">
+                <div id="slider_partners">
+                    <div class="container-fluid clearfix">
+                <?php  $modules = JModuleHelper::getModules('prodaction_objects');
+                if ($modules && is_array($modules)) {
+                    foreach ($modules as $module) {
+                        //непосредственно контент модуля
+                        echo JModuleHelper::renderModule($module);
+                    };
+                } ?>
+                    </div>
+                </div>
+            </div>
 			<div class="jshop_prod_description">
 				<?php print $this->product->description; ?>
 			</div> 			

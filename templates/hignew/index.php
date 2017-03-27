@@ -52,13 +52,20 @@ if (JURI::current() == JURI::base()) {
 
 <body class="body <?php print_r($bodysuffix); ?>">
 
+<div class="form_tail"></div>
+<div class="logo_tail"></div>
+<a href="/" class="logo">
+    <img class="logoimg" src="templates/hignew/images/logo-ltl.png" />
+</a>
+
 <div class="container">
     <div id="header">
-        <div class="logoname">
-            <img class="logo" src="templates/hignew/images/logonew.png" />
-        </div>
+
         <div class="allheader">
             <div class="top_header">
+                <div class="name">
+                    <jdoc:include type="modules" name="logo_name" style="xhtmlgr" />
+                </div>
                 <div class="header_contacts">
                     <jdoc:include type="modules" name="header_contacts" style="xhtmlgr" />
                 </div>
@@ -66,11 +73,13 @@ if (JURI::current() == JURI::base()) {
                     <jdoc:include type="modules" name="header_form_fixed" style="xhtmlgr" />
                 </div>
             </div>
-            <div class="header_menu">
-                <jdoc:include type="modules" name="header_menu" style="xhtmlgr" />
+            <div class="bottom_header">
+                <div class="header_menu">
+                    <jdoc:include type="modules" name="header_menu" style="xhtmlgr" />
+                </div>
             </div>
         </div>
-	</div>
+    </div>
 </div>
 
 <?php if ($this->countModules('slider')) { ?>
@@ -141,6 +150,7 @@ if (JURI::current() == JURI::base()) {
         <?php } ?>
     </div>
 </div>
-<script src="/templates/hignew/js/ltlfunction.js" type="text/javascript"></script>
+
 </body>
 </html>
+<script src="/templates/hignew/js/ltlfunction.js" type="text/javascript"></script>

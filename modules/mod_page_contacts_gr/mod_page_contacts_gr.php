@@ -256,7 +256,7 @@ $countEmp6 = count($employee6nameArr);
 	
 	<div class="clearfix">
 	
-		<div class="mod_contacts_page_section name">
+		<div class="mod_contacts_page_section">
 			<?php if ($params->get('section1')) { ?>
 				<div class="mod_contacts_page_section_block section contacts_show">
 					<?php echo $params->get('section1'); ?>

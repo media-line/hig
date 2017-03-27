@@ -127,6 +127,51 @@ table {
     width: 100%;
 }
 
+/*inside header*/
+.form_tail {
+    /*gradient*/
+    background: #08a2d8; /* Old browsers */
+    background: -moz-linear-gradient(left, #08a2d8 100%, #0690cf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #08a2d8 100%,#0690cf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #08a2d8 100%,#0690cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08a2d8', endColorstr='#0690cf',GradientType=1 ); /* IE6-9 */
+
+    /*shadow*/
+    -webkit-box-shadow: -4px 7px 10px -1px rgba(128,126,128,1);
+    -moz-box-shadow: -4px 7px 10px -1px rgba(128,126,128,1);
+    box-shadow: -4px 7px 10px -1px rgba(128,126,128,1);
+
+    /*other styles*/
+    float: right;
+    box-shadow: 5px 4px 15px rgba(0,0,0,0.6);
+}
+
+.logo_tail {
+    /*gradient*/
+    background: #08a2d8; /* Old browsers */
+    background: -moz-linear-gradient(left, #08a2d8 100%, #0690cf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #08a2d8 100%,#0690cf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #08a2d8 100%,#0690cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08a2d8', endColorstr='#0690cf',GradientType=1 ); /* IE6-9 */
+
+    /*other styles*/
+    position: absolute;
+    left: 0;
+    top: 15px;
+    z-index: 3;
+}
+
+.logo {
+    z-index: 5;
+    width: 17%;
+}
+
+.logoimg {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
 /* header */
 #header {
     background-color: #fff;
@@ -134,9 +179,13 @@ table {
     left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: nowrap;
-    box-shadow: 0px 5px 10px gray;
+}
+
+.allheader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .logoname {
@@ -148,18 +197,38 @@ table {
 }
 
 .logoname img {
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .name {
     color: #fff;
-    background-color: #09afe1;
-    padding: 10px 10px 10px 10px;
-    border-radius: 40px;
+    border-radius: 0px 110px 110px 180px;
     font-size: 28px;
-    height: 46px;
-    margin-left: -98px;
     z-index: 10;
+    background-color: #00B3E7;
+    width: 30%;
+    padding-left: 20px;
+    line-height: 1.8;
+    position: relative;
+    left: 0;
+}
+
+.header_form {
+    width: 30%;
+    padding: 10px 0 10px 10px;
+    border-radius: 30px 0px 0px 30px;
+
+    /*shadow*/
+    -webkit-box-shadow: -4px 7px 10px -1px rgba(128,126,128,1);
+    -moz-box-shadow: -4px 7px 10px -1px rgba(128,126,128,1);
+    box-shadow: -4px 7px 10px -1px rgba(128,126,128,1);
+
+    /*gradient*/
+    background: #068bcc; /* Old browsers */
+    background: -moz-linear-gradient(left, #068bcc 0%, #08a2d8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #068bcc 0%,#08a2d8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #068bcc 0%,#08a2d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#068bcc', endColorstr='#08a2d8',GradientType=1 ); /* IE6-9 */
 }
 
 
@@ -167,8 +236,9 @@ table {
     display: flex;
     flex-direction: row;
     float: right;
-    width: 60%;
-    height: 56px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .top_name {
@@ -182,7 +252,8 @@ table {
 .bottom_header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
+    padding-right: 4%;
 }
 
 .header_info {
@@ -190,11 +261,12 @@ table {
 }
 
 .header_contacts {
-    width: 50%;
+    width: 40%;
     line-height: 50px;
     text-align: center;
     font-size: 34px;
     font-weight: 100;
+    padding-left: 75px;
 }
 
 .mod_header_contacts_gr > div {
@@ -273,7 +345,7 @@ table {
 
 .header_menu .menu{
     background: transparent;
-    font-size: 22px;
+    font-size: 20px;
     color: #0171CF;
 }
 
@@ -377,7 +449,7 @@ table {
 }
 
 .header_menu {
-    margin-top: 65px;
+    margin-top: 10px;
 }
 
 /* slider */
@@ -871,11 +943,6 @@ table {
     visibility: hidden;
 }
 
-.allheader {
-    width: 100%;
-    z-index: 200;
-}
-
 .header_menu .moduletable > ul > li, .item-page .moduletable > .menu > li {
     text-align: center;
     display: inline-block;
@@ -1033,7 +1100,6 @@ table {
     -o-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    width: 53%;
 }
 
 .mod_header_fixed_form:hover {}
@@ -1053,14 +1119,6 @@ table {
 
 .header_header_form_fixed {
     margin-left: 20px;
-}
-
-.header_form {
-    width: 50%;
-    background-color: #068bcc;
-    padding: 10px 0 10px 10px;
-    border-radius: 30px;
-    box-shadow: 5px 4px 15px rgba(0,0,0,0.6);
 }
 
 
@@ -1176,6 +1234,7 @@ table {
     color: #454545;
     position: relative;
     left: -3px;
+    width: 60vw;
 }
 
 .breadcrumb>li+li:before {
@@ -1415,7 +1474,7 @@ a.pagenav:hover  {
     padding-bottom: 15px;
     font-family: 'ProximaNova-Regular';
     font-size: 13px;
-    color: #717171;
+    color: #000101;
 }
 
 .map_button button_0 {
@@ -1459,7 +1518,7 @@ a.pagenav:hover  {
 .mod_contacts_page_block_name {
     border-bottom: 1px solid #d1d8e0;
     padding-bottom: 10px;
-    color: #0171cf;
+    color: #4094db;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -1611,6 +1670,7 @@ a.pagenav:hover  {
 
 .mod_contacts_page_section {
     float: left;
+    width: 49%;
 }
 
 .mod_contacts_page_section_block.section.employee_show {
@@ -1955,6 +2015,7 @@ a.pagenav:hover  {
 
 .lift_bottom {
     top: 20px;
+    display: none;
 }
 
 .lift_top {
@@ -2045,44 +2106,6 @@ a.pagenav:hover  {
     text-align: center;
 }
 
-/*responsive*/
-@media all and (max-width: 1880px) {
-    .header_contacts {
-        font-size: 30px;
-        width: 45%;
-    }
-}
-
-@media all and (max-width: 1780px) and (min-width: 1405px) {
-    .header_contacts {
-        font-size: 25px;
-        width: 40%;
-        text-align: right;
-        padding-right: 2%;
-    }
-    .mod_header_fixed_form {
-        width: 70%;
-    }
-}
-
-@media all and (max-width: 1404px) and (min-width: 100px) {
-    .header_contacts {
-        font-size: 20px;
-        width: 40%;
-        text-align: right;
-        padding-right: 1%;
-    }
-    .logoname {
-        text-align: center;
-        width: 25%;
-    }
-    .logoname img {
-        width: auto;
-    }
-    .top_header {
-        width: 80%;
-    }
-    .mod_header_fixed_form {
-        width: 70%;
-    }
+.extra_fields_el {
+    padding: 10px 0;
 }
