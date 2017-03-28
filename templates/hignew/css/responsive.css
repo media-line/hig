@@ -1,0 +1,73 @@
+@media all and (max-width: 767px) {
+    .header_menu .moduletable > ul > li, .item-page .moduletable > .menu > li {
+        display: block;
+    }
+
+    .header_menu .moduletable > ul {
+        width: 90vw;
+    }
+
+    .nav > li > a {
+        border: none;
+    }
+
+    .header_menu .nav-child li {
+        width: 90vw;
+    }
+
+    .logoimg {
+        left: 15px !important;
+    }
+
+    .mod_header_contacts_gr_logo {
+        float: right;
+    }
+
+    .header_form {
+        border-radius: 30px;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+@media all and (max-width: 1205px) and (min-width: 1140px) {
+    .header_contacts {
+        font-size: 30px;
+    }
+    .name {
+        font-size: 22px;
+        line-height: 2.3;
+    }
+    .header_menu .moduletable > ul > li, .header_menu .nav-child li {
+        font-size: 15px;
+    }
+    .header_menu {
+        margin-top: 15px;
+    }
+}
+
+@media all and (max-width: 1140px) and (min-width: 767px) {
+    .header_contacts {
+        font-size: 22px;
+    }
+    .name {
+        font-size: 19px;
+        line-height: 2.5;
+    }
+    .header_menu .moduletable > ul > li, .header_menu .nav-child li {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 991px) and (min-width: 767px) {
+    .header_form {
+        border-radius: 30px;
+        padding: 10px 10px 10px 10px;
+    }
+    .header_menu .moduletable > ul > li {
+        font-size: 20px;
+        float: right;
+    }
+    .logoimg {
+        left: 15px !important;
+    }
+}

@@ -17,7 +17,7 @@ $extraFields = $prod->getExtraFields();
 <?php print $product->_tmp_var_start?>
 <div class="product productitem_<?php print $product->product_id?>">
  
-    <div class="name">
+    <div class="nameobj">
         <?php print $product->name?>
         <?php if ($this->config->product_list_show_product_code){?>
             <span class="jshop_code_prod">(<?php print _JSHOP_EAN?>: <span><?php print $product->product_ean;?></span>)</span>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>Блок новостей</name>
+        <creationDate>2017</creationDate>
+        <author>kravchenko</author>
+        <authorEmail>akravchenko@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description>Блок новостей</description>
+        <files>
+                <filename module="mod_news_main">mod_news_main.php</filename>
+                <filename>mod_news_main.xml</filename>
+        </files>
+	    <config>
+           <!-- <fields name="params">
+			    <fieldset name="basic">
+					<field name="logo1" type="media"
+						label="Логотип 1"
+						description="Логотип 1"	/>
+					<field name="text1" type="text"
+						label="Телефон 1"
+						description="Телефон 1"	/>
+					<field name="logo2" type="media"
+						label="Логотип 2"
+						description="Логотип 2"	/>
+					<field name="text2" type="text"
+						label="Телефон 2"
+						description="Телефон 2"	/>
+				</fieldset>
+				<fieldset name="advanced">
+					<field
+						name="moduleclass_sfx"
+						type="text"
+						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				</fieldset>
+			</fields>-->
+        </config>
+
+</extension>
