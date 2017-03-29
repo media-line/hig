@@ -2160,3 +2160,60 @@ a.pagenav:hover {
     text-align: center;
     font-size: 26px !important;
 }
+
+.wrappernews {
+    text-align: center;
+}
+
+.rownews {
+    text-align: justify;
+}
+
+.rownews > div:hover {
+    background-color: #d8eaf8;
+}
+
+.rownews .title {
+    font-size: 25px;
+    color: #0171cf;
+    border-bottom: 1px solid #0171cf;
+    width: 100%;
+}
+
+.fnew, .onew {
+    border: 1px solid #add3f0;
+    padding: 15px;
+    height: 500px;
+    margin: 1%;
+}
+
+.fnew {
+    display: flex;
+    flex-direction: row;
+}
+
+.fnew div {
+    padding: 1%;
+}
+
+.fnew div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.fnew img {
+    width: auto;
+}
+
+.onew img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-news {
+    padding: 5px 20px;
+    background-color: #0171cf;
+    color: #dfedf9;
+}
