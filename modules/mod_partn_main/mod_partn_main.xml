@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="2.5.0" method="upgrade">
-        <name>Блок новостей</name>
+        <name>Блок партнеров</name>
         <creationDate>2017</creationDate>
         <author>kravchenko</author>
         <authorEmail>akravchenko@gmail.com</authorEmail>
         <version>0.1</version>
-        <description>Блок новостей</description>
+        <description>Блок партнеров</description>
         <files>
-                <filename module="mod_news_main">mod_news_main.php</filename>
-                <filename>mod_news_main.xml</filename>
+                <filename module="mod_partn_main">mod_partn_main.php</filename>
+                <filename>mod_partn_main.xml</filename>
         </files>
 	    <config>
-
         </config>
 
 </extension>

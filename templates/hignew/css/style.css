@@ -2169,7 +2169,11 @@ a.pagenav:hover {
     text-align: justify;
 }
 
-.rownews > div:hover {
+.fnew:hover {
+    background-color: #d8eaf8;
+}
+
+.onew:hover {
     background-color: #d8eaf8;
 }
 
@@ -2216,4 +2220,16 @@ a.pagenav:hover {
     padding: 5px 20px;
     background-color: #0171cf;
     color: #dfedf9;
+}
+
+.client_mod {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mclient {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
