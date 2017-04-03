@@ -61,6 +61,7 @@ if (JURI::current() == JURI::base()) {
 <div id="float-block" class="float-block">
 <!--    <div class="form_tail hidden-xs hidden-sm"></div>
     <div class="logo_tail hidden-xs hidden-sm"></div>-->
+
     <a href="/" class="ltl-logo">
         <img class="logoimg" src="templates/hignew/images/logo-ltl.png"/>
     </a>
@@ -71,12 +72,8 @@ if (JURI::current() == JURI::base()) {
 
     <div class="container">
         <div id="header">
-
             <div class="allheader">
                 <div class="top_header">
-                    <!--<div class="name hidden-xs hidden-sm col-md-4">
-                        <jdoc:include type="modules" name="logo_name" style="xhtmlgr"/>
-                    </div>-->
                     <div class="header_contacts col-xs-8 col-sm-8 col-md-5">
                         <jdoc:include type="modules" name="header_contacts" style="xhtmlgr"/>
                     </div>

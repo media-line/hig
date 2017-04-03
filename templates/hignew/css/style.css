@@ -261,10 +261,10 @@ table {
 .top_header {
     display: flex;
     flex-direction: row;
-    float: right;
     position: relative;
     top: 0;
     left: 0;
+    justify-content: flex-end;
 }
 
 .top_name {
@@ -278,8 +278,9 @@ table {
 .bottom_header {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: flex-end;
     padding-right: 2%;
+    z-index: 10;
 }
 
 .header_info {
@@ -287,9 +288,8 @@ table {
 }
 
 .header_contacts {
-    /*    width: 40%;*/
     line-height: 50px;
-    text-align: center;
+    text-align: right;
     font-size: 34px;
     font-weight: 100;
     padding-left: 75px;
@@ -2240,4 +2240,8 @@ body {
 
 .ltl-logo {
     display: none;
+}
+
+.big-logo img, .ltl-logo img {
+    z-index: 1;
 }
