@@ -23,7 +23,7 @@ $data_row = $db->loadRowList();
             $count = count($data_row);
         for ($i=0; $i<$count; $i++){?>
             <div class="mclient col-md-2">
-                <img src="http://hig/components/com_jshopping/files/img_manufs/<?php echo $data_row[$i][1] ?>" />
+                <img src="/components/com_jshopping/files/img_manufs/<?php echo $data_row[$i][1] ?>" />
                 <p><?php echo $data_row[$i][2] ?></p>
             </div>
         <?php }; ?>

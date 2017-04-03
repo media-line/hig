@@ -175,7 +175,7 @@ table {
 .logoimg {
     position: absolute;
     top: 0;
-    z-index: 300;
+    width: auto;
 }
 
 /* header */
@@ -2232,4 +2232,12 @@ a.pagenav:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.ltl-logo {
+    display: none;
 }

@@ -35,7 +35,7 @@ $app = Jfactory::getApplication();
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/jquery.mousewheel.js"></script>
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/jquery.jscrollpane.min.js"></script>
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/script.js"></script>
-    <meta name="viewport" content="width=1280px">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
@@ -59,10 +59,14 @@ if (JURI::current() == JURI::base()) {
 
 <body class="body <?php print_r($bodysuffix); ?>">
 <div id="float-block" class="float-block">
-    <div class="form_tail hidden-xs hidden-sm"></div>
-    <div class="logo_tail hidden-xs hidden-sm"></div>
-    <a href="/" class="logo">
+<!--    <div class="form_tail hidden-xs hidden-sm"></div>
+    <div class="logo_tail hidden-xs hidden-sm"></div>-->
+    <a href="/" class="ltl-logo">
         <img class="logoimg" src="templates/hignew/images/logo-ltl.png"/>
+    </a>
+
+    <a href="/" class="big-logo">
+        <img class="logoimg" src="templates/hignew/images/logonew.png"/>
     </a>
 
     <div class="container">
@@ -70,9 +74,9 @@ if (JURI::current() == JURI::base()) {
 
             <div class="allheader">
                 <div class="top_header">
-                    <div class="name hidden-xs hidden-sm col-md-4">
+                    <!--<div class="name hidden-xs hidden-sm col-md-4">
                         <jdoc:include type="modules" name="logo_name" style="xhtmlgr"/>
-                    </div>
+                    </div>-->
                     <div class="header_contacts col-xs-8 col-sm-8 col-md-5">
                         <jdoc:include type="modules" name="header_contacts" style="xhtmlgr"/>
                     </div>
@@ -104,6 +108,7 @@ if (JURI::current() == JURI::base()) {
         </div>
     </div>
 </div>
+
 <?php if ($this->countModules('slider')) { ?>
     <div id="slider">
         <jdoc:include type="modules" name="slider" style="xhtmlgr"/>
