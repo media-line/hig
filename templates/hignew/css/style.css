@@ -2234,10 +2234,6 @@ a.pagenav:hover {
     justify-content: space-between;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 .ltl-logo {
     display: none;
 }
@@ -2245,3 +2241,4 @@ body {
 .big-logo img, .ltl-logo img {
     z-index: 1;
 }
+
