@@ -92,6 +92,58 @@
         padding-top: 0px;
         height: 30px;
     }
+
+    .button_doc {
+        top: -15px;
+        right: 95px;
+    }
+
+    .wrap_contacts_page_block {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mod_contacts_page_block {
+        width: 100%;
+    }
+
+    .mod_contacts_page_section_block.section {
+        width: 85vw;
+    }
+
+    .mod_contacts_page_section.info {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .mod_contacts_page_section_fio {
+        width: 40%;
+    }
+
+    .mod_contacts_page_section_info {
+        width: 60%;
+    }
+
+    .list_product_object .sblock2 {
+        width: 100%;
+    }
+
+    .pagination-prev, .pagination-next {
+        display: block !important;
+    }
+
+    .pagination-prev {
+        margin-bottom: 20px !important;
+    }
+
+    .pagination-next {
+        margin-top: 20px !important;
+    }
+
+    .pagination {
+        width: auto;
+    }
 }
 
 @media all and (min-width: 376px) and (max-width: 613px ) {
@@ -202,6 +254,58 @@
     .header_menu .moduletable > ul {
         width: 350px;
     }
+
+    .button_doc {
+        top: -15px;
+        right: 95px;
+    }
+
+    .wrap_contacts_page_block {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mod_contacts_page_block {
+        width: 100%;
+    }
+
+    .mod_contacts_page_section_block.section {
+        width: 85vw;
+    }
+
+    .mod_contacts_page_section.info {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .mod_contacts_page_section_fio {
+        width: 40%;
+    }
+
+    .mod_contacts_page_section_info {
+        width: 60%;
+    }
+
+    .list_product_object .sblock2 {
+        width: 100%;
+    }
+
+    .pagination-prev {
+        margin-bottom: 20px !important;
+    }
+
+    .pagination-next {
+        margin-top: 20px !important;
+    }
+
+    .pagination {
+        width: auto;
+    }
+
+    .pagination-prev, .pagination-next {
+        display: block !important;
+    }
 }
 
 @media all and (min-width: 481px ) and (max-width: 613px ) {
@@ -269,6 +373,7 @@
         right: 0;
         top: 0;
         width: 100%;
+        z-index: 500;
     }
 }
 
@@ -378,6 +483,15 @@
     .header_menu .moduletable > ul {
         width: 650px;
     }
+
+    .button_doc {
+        top: -55px;
+        right: 36%;
+    }
+
+    .mod_contacts_page {
+        margin-top: 40px;
+    }
 }
 
 /*Tablet*/
@@ -473,6 +587,15 @@
 
     .form_tail {
         display: none;
+    }
+
+    .button_doc {
+        top: -55px;
+        right: 36%;
+    }
+
+    .mod_contacts_page {
+        margin-top: 40px;
     }
 }
 

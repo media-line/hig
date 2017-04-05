@@ -978,9 +978,13 @@ table {
 }
 
 .header_menu .moduletable > ul > li.active {
-    padding: 10px 6px;
+    /*padding: 10px 6px;*/
     cursor: pointer;
     background-color: #068bcc;
+    color: #fff;
+}
+
+.header_menu .moduletable > ul > li.active a {
     color: #fff;
 }
 
