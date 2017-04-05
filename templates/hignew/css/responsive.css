@@ -333,7 +333,7 @@
     }
 
     .line {
-        display: block;
+        display: inline-block;
     }
 
     .djslider-default ul.djslider-in > li > img {
@@ -417,7 +417,7 @@
     }
 
     .line {
-        display: block;
+        display: inline-block;
     }
 
     .djslider-default ul.djslider-in > li > img {
@@ -585,6 +585,10 @@
     .header_contacts {
         font-size: 26px;
     }
+
+    .line {
+        display: inline-block;
+    }
 }
 
 /*Big Desktop*/
@@ -705,13 +709,5 @@
 
     .big-logo {
         display: none;
-    }
-}
-
-
-/*Others*/
-@media all and (min-width: 760px) and (max-width: 1199px)  {
-    .strangecontainer {
-        width: 720px;
     }
 }

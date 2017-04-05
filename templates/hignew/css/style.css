@@ -2135,6 +2135,7 @@ a.pagenav:hover {
     background-repeat: no-repeat;
     width: 100%;
     color: transparent;
+    display: inline-block;
 }
 
 .div_h2 {
