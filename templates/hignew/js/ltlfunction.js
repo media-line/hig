@@ -26,17 +26,6 @@ function LenghtTail(o) {
         dopol = '';
     }
 
-    var logoimg = jQuery('.logoimg')[0];
-    logoimg.style.left = raz + 'px';
-
-    var name = jQuery('.name')[0];
-    name.style.left = (jQuery('.logoimg')[0].offsetHeight) / 2 + 'px';
-
-    var breadcrumb = jQuery('.breadcrumb')[0];
-    if (breadcrumb != undefined) {
-        breadcrumb.style.left = dop + 'px';
-    }
-
     /*применение значений*/
     obj.style.width = dopol + raz + 'px';
     obj.style.height = height + 'px';
@@ -51,6 +40,7 @@ function Test() {
 
 window.onload = function () {
 
+    LenghtTail('.form_tail')
     LittleText();
     //Test();
 

@@ -11,7 +11,7 @@
 defined('_JEXEC') or die;
 
 ?>
-<div class="container">
+<div class="container strangecontainer">
     <div class="row">
         <div class="mod_main_category mod_main_category4 mod_main_category0">
             <a href="<?php echo $params->get('url1'); ?>">

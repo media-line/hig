@@ -59,7 +59,7 @@ if (JURI::current() == JURI::base()) {
 
 <body class="body <?php print_r($bodysuffix); ?>">
 <div id="float-block" class="float-block">
-
+    <div class="form_tail hidden-xs hidden-sm"></div>
     <a href="/" class="ltl-logo">
         <img class="logoimg" src="templates/hignew/images/logo-ltl.png"/>
     </a>
@@ -140,7 +140,7 @@ if (JURI::current() == JURI::base()) {
     <?php } ?>
 </div>
 
-<div class="container hidden-xs hidden-sm">
+<div class="container hidden-xs hidden-sm slider_partners_last">
     <?php if ($this->countModules('slider_partners')) { ?>
         <div id="slider_partners">
             <div class="container-fluid clearfix">

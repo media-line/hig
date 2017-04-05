@@ -74,3 +74,13 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
+
+#Brouser cache
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    ExpiresByType image/png "access plus 2 month"
+    ExpiresByType image/jpeg "access plus 2 month"
+    ExpiresByType text/html "access plus 2 month"
+</IfModule>
