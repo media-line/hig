@@ -1936,6 +1936,7 @@ span.prod_attr_img img {
     background-position: center center;
     background-repeat: no-repeat;
     margin-top: 25px;
+    z-index: 0;
 }
 
 .joomshopping_full_product {
