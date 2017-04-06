@@ -2131,6 +2131,22 @@ a.pagenav:hover {
     background-repeat: no-repeat;
     width: 100%;
     color: #0171cf !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+.mod_name2 {
+    background-image: url("/images/other/lineshort.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #0171cf !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 20px 0;
 }
 
 .line {
