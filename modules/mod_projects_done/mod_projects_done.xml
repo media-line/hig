@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>Реализованные и выполненные объекты</name>
+        <creationDate>2017</creationDate>
+        <author>kravchenko</author>
+        <authorEmail>akravchenko@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description>Реализованные и выполненные объекты</description>
+        <files>
+                <filename module="mod_projects_done">mod_projects_done.php</filename>
+                <filename>mod_projects_done.xml</filename>
+        </files>
+	    <config>
+        </config>
+
+</extension>

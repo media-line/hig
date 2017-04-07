@@ -162,6 +162,51 @@
         width: 50%;
         text-align: center;
     }
+
+    .wrapbot .row-left {
+        background: none;
+    }
+
+    .proektsys .wrapbot .row .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .proektsys .wrapbot .row .item p {
+        height: auto;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .wrapbot .row {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .pdone .item {
+        margin-bottom: 15px;
+    }
+
+    .pdone .nameprod {
+        font-size: 130%;
+        padding: 5%;
+    }
+
+    .pdone .descprod {
+        font-size: 100%;
+        padding: 10px;
+    }
+
+    .headprod {
+        text-align: center;
+    }
 }
 
 @media all and (min-width: 376px) and (max-width: 613px ) {
@@ -333,14 +378,55 @@
         width: 85vw;
     }
 
-    .proektsys .row {
+    .proektsys .wrap .row {
         display: flex;
         flex-direction: row;
     }
 
-    .proektsys .row > .item {
+    .proektsys .wrap .row > .item {
         width: 50%;
         text-align: center;
+    }
+
+    .wrapbot .row-left {
+        background: none;
+    }
+
+    .proektsys .wrapbot .row .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .proektsys .wrapbot .row .item p {
+        height: auto;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .wrapbot .row {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .pdone .item {
+        margin-bottom: 15px;
+    }
+
+    .pdone .nameprod {
+        font-size: 130%;
+        padding: 5%;
+    }
+
+    .pdone .descprod {
+        font-size: 100%;
+        padding: 10px;
     }
 }
 
@@ -537,15 +623,82 @@
         width: 85vw;
     }
 
-    .proektsys .wrap{
+    .proektsys .wrap .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .proektsys .wrap .row > .item {
+        width: 50%;
+        text-align: center;
+    }
+
+    .wrapbot .row-left {
+        background: none;
+    }
+
+    .proektsys .wrapbot .row .item {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 15px;
     }
 
-    .proektsys .wrap .row {
-        width: 33%;
+    .proektsys .wrapbot .row .item p {
+        height: auto;
+        padding: 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .wrapbot .row {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .pdone .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .pdone .item {
+        width: 48%;
+        margin: 1% 0.5%;
+    }
+
+    .pdone .item:last-child {
+        width: 97%;
+    }
+
+    .headprod {
+        text-align: center;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pdone .item:last-child .headprod {
+        display: block;
+        height: auto;
+    }
+
+    .headprod p {
+        font-size: 130%;
+    }
+
+    .pdone .nameprod {
+        padding: 20px 0;
+    }
+
+    .pdone .descprod {
+        font-size: 100%;
+        padding: 10px 0;
     }
 }
 
@@ -667,6 +820,85 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .proektsys .wrapbot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proektsys .wrapbot .row-left {
+        background-image: url(/images/other/proekting/bcg-right.png);
+        background-position: 103%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60%;
+    }
+
+    .proektsys .wrapbot .row-right {
+        width: 40%;
+    }
+
+    .proektsys .wrapbot .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .proektsys .wrapbot .item p {
+        width: auto;
+        height: auto;
+        padding: 0 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .proektsys .wrapbot .row-left p {
+        width: 50%;
+    }
+
+    .pdone .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .pdone .item {
+        width: 48%;
+        margin: 1% 0.5%;
+    }
+
+    .pdone .item:last-child {
+        width: 97%;
+    }
+
+    .headprod {
+        text-align: center;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pdone .item:last-child .headprod {
+        display: block;
+        height: auto;
+    }
+
+    .headprod p {
+        font-size: 130%;
+    }
+
+    .pdone .nameprod {
+        padding: 20px 0;
+    }
+
+    .pdone .descprod {
+        font-size: 100%;
+        padding: 10px 0;
+    }
 }
 
 @media all and (min-width: 767px) and (max-width: 978px) {
@@ -704,6 +936,29 @@
 
     .breadcrumb {
         margin-top: 30px;
+    }
+
+    .proektsys .wrapbot .row-left {
+        background-position: 98%;
+        margin-left: 1%;
+    }
+
+    .pdone .item {
+        width: 31%;
+        margin: 1% 1%;
+    }
+
+    .pdone .item:last-child {
+        width: 31%;
+        margin: 1% 1%;
+    }
+
+    .pdone .item:last-child .headprod {
+        text-align: center;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -754,6 +1009,63 @@
 
     .proektsys .wrap .row .item {
         width: 50%;
+    }
+
+    .proektsys .wrapbot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proektsys .wrapbot .row-left {
+        background-image: url(/images/other/proekting/bcg-right.png);
+        background-position: 95%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60%;
+        margin-left: 1%;
+    }
+
+    .proektsys .wrapbot .row-right {
+        width: 40%;
+    }
+
+    .proektsys .wrapbot .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .proektsys .wrapbot .item p {
+        width: auto;
+        height: auto;
+        padding: 0 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .proektsys .wrapbot .row-left p {
+        width: 50%;
+    }
+
+    .pdone .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pdone .item {
+        width: 18%;
+        margin: 1%;
+    }
+
+    .pdone .item .headprod {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -843,6 +1155,63 @@
 
     .proektsys .wrap .row .item {
         width: 50%;
+    }
+
+    .proektsys .wrapbot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proektsys .wrapbot .row-left {
+        background-image: url(/images/other/proekting/bcg-right.png);
+        background-position: 95%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 60%;
+        margin-left: 1%;
+    }
+
+    .proektsys .wrapbot .row-right {
+        width: 40%;
+    }
+
+    .proektsys .wrapbot .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .proektsys .wrapbot .item p {
+        width: auto;
+        height: auto;
+        padding: 0 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .proektsys .wrapbot .row-left p {
+        width: 50%;
+    }
+
+    .pdone .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pdone .item {
+        width: 18%;
+        margin: 1%;
+    }
+
+    .pdone .item .headprod {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 

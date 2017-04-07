@@ -90,7 +90,7 @@ a:hover {
 
 .div_h2 {
     font-size: 30pt;
-    color: #4c79ce;
+    color: #2786D6;
     padding: 25px 0;
     -webkit-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
@@ -2263,3 +2263,46 @@ a.pagenav:hover {
     z-index: 1;
 }
 
+.row-left {
+    background-image: url("/images/other/proekting/bcg-right.png");
+    background-position: top right;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.pdone {
+    padding: 0 15px;
+}
+
+.pdone .item {
+    border: 1px solid #c6c6c6;
+    padding: 30px;
+}
+
+.pdone .nameprod {
+    border-bottom: 1px solid #c6c6c6;
+    padding: 0 5px;
+    width: auto;
+    color: #0171cf;
+    text-align: center;
+    font-size: 100%;
+    padding: 15px 0;
+}
+
+.pdone .descprod {
+    text-align: center;
+    color: #acacac;
+    font-size: 80%;
+    padding: 10px 0;
+}
+
+.pdone .headprod > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.pdone .headprod > div:first-child img {
+    width: 100%;
+}
