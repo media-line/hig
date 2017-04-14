@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+        <name>Модуль Технического обслуживания 2</name>
+        <creationDate>2017</creationDate>
+        <author>kravchenko</author>
+        <authorEmail>akravchenko@gmail.com</authorEmail>
+        <version>0.1</version>
+        <description>Модуль технического обслуживания 2</description>
+        <files>
+                <filename module="mod_to2">mod_to2.php</filename>
+                <filename>mod_to2.xml</filename>
+        </files>
+	    <config>
+        </config>
+
+</extension>

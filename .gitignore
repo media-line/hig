@@ -50,5 +50,3 @@ Temporary Items
 /tmp/*
 /logs/*
 /cache
-/sxd
-!/sxd/backup/
