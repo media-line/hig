@@ -103,6 +103,12 @@ a:hover {
     font-weight: bold;
     text-transform: none;
     padding: 0 0 7px 0;
+    background-image: none;
+}
+
+.nav-stacked > li > a {
+    border-left: none !important;
+    border-right: none !important;
 }
 
 #content {
@@ -978,7 +984,7 @@ table {
 }
 
 .header_menu .moduletable > ul > li.active {
-    /*padding: 10px 6px;*/
+    padding: 10px 10px;
     cursor: pointer;
     background-color: #068bcc;
     color: #fff;
@@ -2345,6 +2351,7 @@ a.pagenav:hover {
     display: flex;
     flex-direction: row;
     font-size: 13px;
+    margin-bottom: 20px;
 }
 
 .mhk .arrow {
