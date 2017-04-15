@@ -259,6 +259,49 @@
     .page-header .div_h2 {
         font-size: 37px;
     }
+
+    .sert .span6 {
+        width: 100%;
+    }
+
+    .sert .span6 .column-1, .sert .span6 .column-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sert .span6 .column-1 .sert_intro_image,
+    .sert .span6 .column-2 .sert_intro_image {
+        width: 100%;
+    }
+
+    .sert .span6 .column-1 .item-image {
+        width: 100%;
+    }
+
+    .sert_intro .div_h2 {
+        font-size: 25px;
+    }
+
+    .sert_intro .sert_introtext {
+        display: none;
+    }
+
+    .sert_intro_desc {
+        padding: 0;
+        width: 100%;
+    }
+
+    .manufacture_block_inner .image {
+        display: none;
+    }
+
+    .jshop_list_manufacturer .jshop_categ {
+        padding: 20px !important;
+    }
+
+    .manufacture_object {
+        margin-left: 0px;
+    }
 }
 
 @media all and (min-width: 376px) and (max-width: 613px ) {
@@ -519,6 +562,49 @@
     .blog .item:hover .blog_intro_desc {
         border-top: none;
         border-left: 2px solid #0171CF;
+    }
+
+    .sert .span6 {
+        width: 100%;
+    }
+
+    .sert .span6 .column-1, .sert .span6 .column-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sert .span6 .column-1 .sert_intro_image,
+    .sert .span6 .column-2 .sert_intro_image {
+        width: 100%;
+    }
+
+    .sert .span6 .column-1 .item-image {
+        width: 100%;
+    }
+
+    .sert_intro .div_h2 {
+        font-size: 25px;
+    }
+
+    .sert_intro .sert_introtext {
+        display: none;
+    }
+
+    .sert_intro_desc {
+        padding: 0;
+        width: 100%;
+    }
+
+    .manufacture_block_inner .image {
+        display: none;
+    }
+
+    .jshop_list_manufacturer .jshop_categ {
+        padding: 20px !important;
+    }
+
+    .manufacture_object {
+        margin-left: 0px;
     }
 }
 
@@ -835,6 +921,10 @@
     .to .row .item .ltlname {
         min-height: 31px;
         font-size: 13px;
+    }
+
+    .manufacture_block .jshop_img {
+        max-width: 100%;
     }
 }
 
