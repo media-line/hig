@@ -2467,8 +2467,6 @@ a.pagenav:hover {
     width: 100%;
 }
 
-<<<<<<< HEAD
-
 /*------------------------------------*\
     #REVIEW_ABOUT (О компании "Отзывы")
 \*------------------------------------*/
@@ -2572,10 +2570,6 @@ a.pagenav:hover {
     }
 }
 
-
-
-
-
 /*------------------------------------*\
     #CLIENT_ABOUT (О компании "Клиенты")
 \*------------------------------------*/
@@ -2629,7 +2623,7 @@ a.pagenav:hover {
         font-size: 13px;
     }
 }
-=======
+
 .to .row .item {
     background-color: #fff;
     border: 1px solid #b2d4f0;
@@ -2683,4 +2677,3 @@ a.pagenav:hover {
     width: 16.8%;
     text-align: center;
 }
->>>>>>> NewTemplate
