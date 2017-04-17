@@ -984,7 +984,7 @@ table {
 }
 
 .header_menu .moduletable > ul > li.active {
-    padding: 10px 10px;
+    padding: 10px 10px !important;
     cursor: pointer;
     background-color: #068bcc;
     color: #fff;
@@ -1521,7 +1521,7 @@ a.pagenav:hover {
 .page_article p, .page_article ul {
     padding-bottom: 15px;
     font-family: 'ProximaNova-Regular';
-    font-size: 13px;
+    font-size: 16px;
     color: #000101;
 }
 
@@ -1684,6 +1684,7 @@ a.pagenav:hover {
     -o-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    background-image: url("/templates/hignew/images/cont.jpg");
 }
 
 .mod_contacts_page_section_block.section span {
@@ -1723,6 +1724,7 @@ a.pagenav:hover {
 
 .mod_contacts_page_section_block.section.employee_show {
     background-color: #00B0EA;
+    background-image: none;
 }
 
 .employee_show .section_block_tip {
