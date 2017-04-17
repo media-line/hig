@@ -4,6 +4,7 @@ body {
     background: url(../images/footer.png);
     background-position: bottom center;
     background-repeat: no-repeat;
+    font-size: 16px;
 }
 
 body.mainpage #content {
@@ -89,7 +90,7 @@ a:hover {
 }
 
 .div_h2 {
-    font-size: 30pt;
+    font-size: 30px;
     color: #2786D6;
     padding: 25px 0;
     -webkit-transition-duration: 0.3s;
@@ -448,6 +449,7 @@ table {
     visibility: hidden;
     font-size: 22px;
     background: #068bcc;
+    left: 1.5%;
 }
 
 .header_menu .nav-child > li:hover {
@@ -1684,6 +1686,7 @@ a.pagenav:hover {
     -o-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    background-image: url("/templates/hignew/images/cont.jpg");
 }
 
 .mod_contacts_page_section_block.section span {
@@ -1723,6 +1726,7 @@ a.pagenav:hover {
 
 .mod_contacts_page_section_block.section.employee_show {
     background-color: #00B0EA;
+    background-image: none;
 }
 
 .employee_show .section_block_tip {
@@ -1824,14 +1828,25 @@ a.pagenav:hover {
     -o-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    padding: 15px;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
 }
 
 .clients .span2:hover {
     z-index: 10;
     border: 2px solid #D0D0D0;
-    width: 22.6%;
+    width: 130%;
     margin-left: -2.9%;
+}
+
+.clients .item-wrapper {
+    padding: 15px;
+    height: 150px;
+    float: left;
+    width: 16.6%;
+    text-align: center;
+    position: relative;
 }
 
 .clients .item-image img {
@@ -1840,8 +1855,8 @@ a.pagenav:hover {
 }
 
 .clients .description {
-    padding: 15px 0;
-    margin: 15px 0;
+    padding: 15px 10px 0 10px;
+    margin: 15px 0 5px 0;
     border-top: 1px solid #E7E7E7;
     height: 0;
     overflow: hidden;
@@ -1899,6 +1914,32 @@ a.pagenav:hover {
     display: table-cell;
     vertical-align: middle;
 }
+
+@media (max-width: 1199px) {
+    .clients .item-wrapper {
+        width: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .clients .item-wrapper {
+        width: 33.3%;
+    }
+}
+
+@media (max-width: 767px) {
+    .clients .item-wrapper {
+        width: 100%;
+    }
+
+    .clients .span2:hover {
+        left: 0;
+        right: 0;
+        width: auto;
+    }
+}
+
+
 
 /* ��������� ������ */
 .mod_latest_works_block {
@@ -2198,40 +2239,85 @@ a.pagenav:hover {
 
 .fnew:hover {
     background-color: #d8eaf8;
+    border: 1px solid #d8eaf8;
 }
 
 .onew:hover {
     background-color: #d8eaf8;
+    border: 1px solid #d8eaf8;
+}
+
+.fnew .date {
+    padding-top: 20px;
+}
+
+.onew .date {
+    padding-top:15px;
 }
 
 .rownews .title {
-    font-size: 25px;
     color: #0171cf;
     border-bottom: 1px solid #0171cf;
     width: 100%;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.3;
+    padding-bottom: 5px;
+    height: 50px;
+}
+
+.fnew .title {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.onew .title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.calendar {
+    width: 12px;
+    height: 12px;
+}
+
+.calendar-path {
+    fill: #0171cf;
+}
+
+.rownews .intro {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: left;
 }
 
 .fnew, .onew {
     border: 1px solid #add3f0;
-    padding: 15px;
-    height: 500px;
-    margin: 1%;
+    height: 400px;
+    display: block;
+    color: black;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.colnews {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .fnew {
     display: flex;
     flex-direction: row;
+    padding: 15px;
 }
 
-.fnew div {
-    padding: 1%;
-}
-
-.fnew div:first-child {
+.fnew-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 45%;
+    min-width: 45%;
+    margin-right: 5%;
 }
 
 .fnew img {
@@ -2243,22 +2329,93 @@ a.pagenav:hover {
     height: auto;
 }
 
+.onew-img {
+    height: 195px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.onew-info {
+    padding: 8px;
+}
+
+.btn-news-wrapper {
+    text-align: center;
+    padding: 30px 0;
+}
+
 .btn-news {
-    padding: 5px 20px;
+    padding: 10px 50px;
     background-color: #0171cf;
+    border: 1px solid #0171cf;
     color: #dfedf9;
+    display: inline-block;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
-.client_mod {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.btn-news:hover {
+    background-color: white;
+    color: #0171cf;
 }
 
-.mclient {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.module-title {
+    background-image: url('/images/other/line.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #0171cf;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+@media (max-width: 1199px) {
+    .fnew {
+        display: block;
+        padding: 0;
+    }
+
+    .fnew-info {
+        padding: 8px;
+    }
+
+    .module-title {
+        background-image: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .colnews-narrow {
+        margin-top: 20px;
+    }
+
+    .fnew {
+        display: flex;
+        padding: 15px;
+    }
+
+    .fnew-info {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .fnew {
+        display: block;
+        padding: 0;
+    }
+
+    .fnew-info {
+        padding: 8px;
+    }
+
+    .fnew .title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
 }
 
 .ltl-logo {
@@ -2313,6 +2470,164 @@ a.pagenav:hover {
     width: 100%;
 }
 
+
+/*------------------------------------*\
+    #REVIEW_ABOUT (О компании "Отзывы")
+\*------------------------------------*/
+.review-module__item {
+    padding: 10px;
+    border: 1px solid #add3f0;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    position: relative;
+    display: block;
+}
+
+.review-module__item:hover {
+    border: 1px solid #d8eaf8;
+}
+
+.review-module__item:hover .review-module__shadow {
+    opacity: 1;
+}
+
+.review-module__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.review-module__shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(1, 113, 207, 0.2);
+    opacity: 0;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.review-module__img {
+    height: 340px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.review-module__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0171cf;
+    padding-top: 10px;
+}
+
+.review-module_cert .review-module__title {
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media (max-width: 1199px) {
+    .review-module__title {
+        height: 55px;
+    }
+
+    .review-module__img {
+        height: 250px;
+    }
+
+    .review-module_cert .review-module__title {
+        font-size: 15px
+    }
+}
+
+@media (max-width: 991px) {
+    .review-module__item {
+        margin-bottom: 20px;
+    }
+
+    .review-module__img {
+        height: 340px;
+    }
+
+    .review-module_cert .review-module__title {
+        height: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .review-module__img {
+        height: 160px;
+    }
+
+    .review-module__title {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .review-module_cert .review-module__title {
+        height: 70px;
+        font-size: 12px;
+        line-height: 1.1;
+    }
+}
+
+/*------------------------------------*\
+    #CLIENT_ABOUT (О компании "Клиенты")
+\*------------------------------------*/
+.client_mod {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mclient {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    padding-top: 10px;
+}
+
+.mclient:hover {
+    border: 1px solid #add3f0;
+}
+
+.mclient__link {
+    display: block;
+}
+
+.mclient__img {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mclient__title {
+    font-size: 15px;
+    color: #0171cf;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mclient__img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 767px) {
+    .mclient__title {
+        font-size: 13px;
+    }
+}
+
 .to .row .item {
     background-color: #fff;
     border: 1px solid #b2d4f0;
@@ -2351,7 +2666,6 @@ a.pagenav:hover {
     display: flex;
     flex-direction: row;
     font-size: 13px;
-    margin-bottom: 20px;
 }
 
 .mhk .arrow {
