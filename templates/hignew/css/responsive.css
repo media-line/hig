@@ -142,7 +142,11 @@
     }
 
     .pagination {
-        width: auto;
+        width: 100%;
+    }
+
+    .pagination ul {
+        display: inline-block;
     }
 
     .jshop_prod_description > p > img {
@@ -206,6 +210,97 @@
 
     .headprod {
         text-align: center;
+    }
+
+    .to .row .item {
+        margin-top: 10px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .mhk {
+        flex-direction: column;
+    }
+
+    .wmhk {
+        width: 100%;
+    }
+
+    .blog_introtext {
+        line-height: 1;
+        font-size: 13px;
+        overflow: hidden;
+        height: 60%;
+    }
+
+    .blog .items-row .column-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog .items-row .column-1 .blog_intro_image {
+        width: 100%;
+    }
+
+    .blog .items-row .column-1 .blog_intro_desc {
+        width: 100%;
+        border-top: none;
+        border-left: 2px solid #C0E8F7;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .blog .items-row .column-1:hover .blog_intro_desc {
+        border-left: 2px solid #0171CF;
+    }
+
+    .page-header .div_h2 {
+        font-size: 37px;
+    }
+
+    .sert .span6 {
+        width: 100%;
+    }
+
+    .sert .span6 .column-1, .sert .span6 .column-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sert .span6 .column-1 .sert_intro_image,
+    .sert .span6 .column-2 .sert_intro_image {
+        width: 100%;
+    }
+
+    .sert .span6 .column-1 .item-image {
+        width: 100%;
+    }
+
+    .sert_intro .div_h2 {
+        font-size: 25px;
+    }
+
+    .sert_intro .sert_introtext {
+        display: none;
+    }
+
+    .sert_intro_desc {
+        padding: 0;
+        width: 100%;
+    }
+
+    .manufacture_block_inner .image {
+        display: none;
+    }
+
+    .jshop_list_manufacturer .jshop_categ {
+        padding: 20px !important;
+    }
+
+    .manufacture_object {
+        margin-left: 0px;
     }
 }
 
@@ -363,7 +458,11 @@
     }
 
     .pagination {
-        width: auto;
+        width: 100%;
+    }
+
+    .pagination ul {
+        display: inline-block;
     }
 
     .pagination-prev, .pagination-next {
@@ -428,6 +527,85 @@
         font-size: 100%;
         padding: 10px;
     }
+
+    .to .row .item {
+        margin-top: 10px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .mhk {
+        flex-direction: column;
+    }
+
+    .wmhk {
+        width: 100%;
+    }
+
+    .blog .items-row .column-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog_intro_image {
+        width: 100%;
+    }
+
+    .blog_intro_desc {
+        width: 100%;
+        border-top: none;
+        border-left: 2px solid #C0E8F7;
+    }
+
+    .blog .item:hover .blog_intro_desc {
+        border-top: none;
+        border-left: 2px solid #0171CF;
+    }
+
+    .sert .span6 {
+        width: 100%;
+    }
+
+    .sert .span6 .column-1, .sert .span6 .column-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sert .span6 .column-1 .sert_intro_image,
+    .sert .span6 .column-2 .sert_intro_image {
+        width: 100%;
+    }
+
+    .sert .span6 .column-1 .item-image {
+        width: 100%;
+    }
+
+    .sert_intro .div_h2 {
+        font-size: 25px;
+    }
+
+    .sert_intro .sert_introtext {
+        display: none;
+    }
+
+    .sert_intro_desc {
+        padding: 0;
+        width: 100%;
+    }
+
+    .manufacture_block_inner .image {
+        display: none;
+    }
+
+    .jshop_list_manufacturer .jshop_categ {
+        padding: 20px !important;
+    }
+
+    .manufacture_object {
+        margin-left: 0px;
+    }
 }
 
 @media all and (min-width: 481px ) and (max-width: 613px ) {
@@ -484,6 +662,28 @@
 
     .advant img {
         width: 140px;
+    }
+
+    .to .row .item {
+        margin-top: 10px;
+    }
+
+    .to {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .to .row {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+
+    .to .row .item .ltlname {
+        min-height: 31px;
+        font-size: 13px;
     }
 }
 
@@ -700,6 +900,32 @@
         font-size: 100%;
         padding: 10px 0;
     }
+
+    .to .row .item {
+        margin-top: 10px;
+    }
+
+    .to {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .to .row {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+
+    .to .row .item .ltlname {
+        min-height: 31px;
+        font-size: 13px;
+    }
+
+    .manufacture_block .jshop_img {
+        max-width: 100%;
+    }
 }
 
 /*Tablet*/
@@ -899,6 +1125,27 @@
         font-size: 100%;
         padding: 10px 0;
     }
+
+    .to {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .to .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .to .row .item {
+        height: 250px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .to .row .item .name, .to .row .item .ltlname {
+        font-size: 15px;
+        padding: 5px;
+    }
 }
 
 @media all and (min-width: 767px) and (max-width: 978px) {
@@ -1067,6 +1314,34 @@
         flex-direction: column;
         justify-content: space-between;
     }
+
+    .to {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .to .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .to .row a {
+        width: 19%;
+    }
+
+    .to .row .item {
+        height: 250px;
+        margin-bottom: 6%;
+        margin-right: 6%;
+    }
+
+    .to2 .row {
+        width: 1080px;
+    }
+
+    .to2 .row a {
+        width: 24%;
+    }
 }
 
 @media all and (min-width: 1230px) and (max-width: 1259px ) {
@@ -1200,6 +1475,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-bottom: 20px;
     }
 
     .pdone .item {
@@ -1212,6 +1488,38 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .to {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .to .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .to .row a {
+        width: 19%;
+    }
+
+    .to .row .item {
+        height: 250px;
+        margin-bottom: 6%;
+        margin-right: 6%;
+    }
+
+    .to2 {
+        align-items: center;
+    }
+
+    .to2 .row {
+        width: 1080px;
+    }
+
+    .to2 .row a {
+        width: 24%;
     }
 }
 
