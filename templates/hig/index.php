@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * @package		Joomla.Site
  * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
@@ -18,27 +18,27 @@ defined('_JEXEC') or die; ?>
 	<script type="text/javascript">
 		jQuery.noConflict();
 	</script>
-	
+
 	<jdoc:include type="head" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/reset.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/jquery.jscrollpane.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/style.css" type="text/css" />
-	
+
 	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/jquery.mousewheel.js"></script>
 	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/jquery.jscrollpane.min.js"></script>
 	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/script.js"></script>
 	<meta name="viewport" content="width=1280px">
-	
-    <script src='https://www.google.com/recaptcha/api.js'></script>	
-	
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
 	<link rel="icon" type="image/vnd.microsoft.icon" href="templates/hig/favicon.ico">
 </head>
 
-<?php $menuitemid = JRequest::getInt( 'Itemid' ); 
+<?php $menuitemid = JRequest::getInt( 'Itemid' );
 if ($menuitemid) {
     $menu = JFactory::getApplication()->getMenu();
 	$bodysuffix = $menu->getParams( $menuitemid )->get('pageclass_sfx');
-} 
+}
 
 $mainpage = false;
 if (JURI::current() == JURI::base()) {
@@ -46,9 +46,9 @@ if (JURI::current() == JURI::base()) {
 }
 
 ?>
-	
+
 <body class="body <?php print_r($bodysuffix); ?>">
-	
+
     <div id="header">
 	    <div class="header_info">
 			<div class="container-fluid clearfix">
@@ -61,34 +61,34 @@ if (JURI::current() == JURI::base()) {
 				</div>
 			    <div class="header_search">
 				    <jdoc:include type="modules" name="header_search" style="xhtmlgr" />
-				</div>				
-			</div>				
-		</div>	
+				</div>
+			</div>
+		</div>
 		<div class="header_menu">
-			<div class="container-fluid clearfix">		
+			<div class="container-fluid clearfix">
                 <jdoc:include type="modules" name="header_menu" style="xhtmlgr" />
 			</div>
-		</div>	
+		</div>
 	</div>
 
 	<div class="fixed-header">
-		<div class="container-fluid clearfix">	
-			<div class="header_fixed header_logo_fixed">			
+		<div class="container-fluid clearfix">
+			<div class="header_fixed header_logo_fixed">
                 <?php if (!$mainpage) { echo '<a href="/">'; } ?><jdoc:include type="modules" name="header_logo_fixed" style="xhtmlgr" /><?php if (!$mainpage) { echo '</a>'; } ?>
 		    </div>
-			<div class="header_fixed header_contacts_fixed">			
+			<div class="header_fixed header_contacts_fixed">
                 <jdoc:include type="modules" name="header_contacts_fixed" style="xhtmlgr" />
 		    </div>
-			<div class="header_fixed header_header_form_fixed">			
+			<div class="header_fixed header_header_form_fixed">
                 <jdoc:include type="modules" name="header_form_fixed" style="xhtmlgr" />
 		    </div>
-	    </div>    
+	    </div>
 	</div>
-	
+
 	<?php if ($this->countModules('slider')) { ?>
 		<div id="slider">
             <jdoc:include type="modules" name="slider" style="xhtmlgr" />
-		</div>		
+		</div>
 	<?php } ?>
 
 	<?php if ($this->countModules('main_category')) { ?>
@@ -96,7 +96,7 @@ if (JURI::current() == JURI::base()) {
 			<div class="container-fluid clearfix">
                 <jdoc:include type="modules" name="main_category" style="xhtmlgr" />
 			</div>
-		</div>		
+		</div>
 	<?php } ?>
 
 	<?php if ($this->countModules('slider_partners')) { ?>
@@ -112,29 +112,29 @@ if (JURI::current() == JURI::base()) {
 			<div class="container-fluid clearfix">
                 <jdoc:include type="modules" name="slider_partners" style="xhtmlgr" />
 			</div>
-		</div>		
-	<?php } ?>	
-	
+		</div>
+	<?php } ?>
+
 	<div id="content">
 		<div class="container-fluid">
 			<?php if ($_SERVER['REQUEST_URI'] != '/') { ?>
 				<div class="lift_bottom lift_button"><img src="/images/lift_bottom.png" alt=""></div>
 				<div class="lift_top lift_button"><img src="/images/lift_top.png" alt=""></div>
 			<?php } ?>
-			<jdoc:include type="message" /> 
-			<jdoc:include type="component" style="xhtmlgr" />	
+			<jdoc:include type="message" />
+			<jdoc:include type="component" style="xhtmlgr" />
 		</div>
-	</div>	
-	
+	</div>
+
     <div id="footer">
         <div class="container-fluid clearfix">
 			<?php if(JURI::current() !== JURI::base()){?>
 				<span>Разработка сайта: </span><a target="_blank" rel="nofollow" href="http://www.medialine.by/">MediaLine</a>
-			<?php } else { ?>	
+			<?php } else { ?>
 				<span>Разработка сайта: </span><a target="_blank" href="http://www.medialine.by/">MediaLine</a>
 			<?php } ?>
-		</div>	
-	</div>			
+		</div>
+	</div>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -173,6 +173,6 @@ if (JURI::current() == JURI::base()) {
   ga('create', 'UA-71852932-1', 'auto');
   ga('send', 'pageview');
 
-</script>	
+</script>
 </body>
 </html>

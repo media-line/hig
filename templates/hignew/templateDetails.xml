@@ -46,6 +46,7 @@ client="site">
 		<position>header_logo_name</position>
 		<position>latest_works</position>
 		<position>after_product</position>
+        <position>page_about</position>
 	</positions>
 	
 </extension>

@@ -13,7 +13,7 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 
 JHtml::_('behavior.caption');
 ?>
-<div class="clients<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="http://schema.org/Blog">
+<div class="clients clearfix <?php echo $this->pageclass_sfx; ?>" itemscope itemtype="http://schema.org/Blog">
 	<?php if ($this->params->get('show_page_heading')) : ?>
 		<div class="page-header">
 			<h1> <?php echo $this->escape($this->params->get('page_heading')); ?> </h1>
@@ -50,7 +50,7 @@ JHtml::_('behavior.caption');
 		<?php endif; ?>
 	<?php endif; ?>
 
-	<?php $leadingcount = 0; ?>
+	<?php /* $leadingcount = 0; ?>
 	<?php if (!empty($this->lead_items)) : ?>
 		<div class="items-leading clearfix">
 			<?php foreach ($this->lead_items as &$item) : ?>
@@ -64,7 +64,7 @@ JHtml::_('behavior.caption');
 				<?php $leadingcount++; ?>
 			<?php endforeach; ?>
 		</div><!-- end items-leading -->
-	<?php endif; ?>
+	<?php endif; */ ?>
 
 	<?php
 	$introcount = (count($this->intro_items));
@@ -73,25 +73,39 @@ JHtml::_('behavior.caption');
 
 	<?php if (!empty($this->intro_items)) : ?>
 		<?php foreach ($this->intro_items as $key => &$item) : ?>
-			<?php $rowcount = ((int) $key % (int) $this->columns) + 1; ?>
-			<?php if ($rowcount == 1) : ?>
-				<?php $row = $counter / $this->columns; ?>
-				<div class="clearfix items-row cols-<?php echo (int) $this->columns; ?> <?php echo 'row-' . $row; ?> row-fluid clearfix">
-			<?php endif; ?>
-			<div class="span<?php echo round((12 / $this->columns)); ?>">
-				<div class="item column-<?php echo $rowcount; ?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>"
-					itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-					<?php
-					$this->item = & $item;
-					echo $this->loadTemplate('item');
-					?>
+			<?php $img = json_decode($item->images); ?>
+
+			<div class="item-wrapper">
+				<div class="span2">
+					<div class="item">
+						<div class="item-image">
+							<div class="item-image-row">
+								<div class="item-image-cell">
+									<img src="<?php echo JLayoutHelper::render(
+										'com_content.article.image',
+										array(
+											'url'    => $img->image_intro,
+
+											'options' => array(
+												'resolution' => '250x350',
+												'force_png'  => true
+											)
+										)
+									); ?>" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="page-header">
+							<h2><?php echo $item->title; ?></h2>
+						</div>
+
+						<div class="description">
+							<?php echo $item->introtext; ?>
+						</div>
+					</div>
 				</div>
-				<!-- end item -->
-				<?php $counter++; ?>
-			</div><!-- end span -->
-			<?php if (($rowcount == $this->columns) or ($counter == $introcount)) : ?>
-				</div><!-- end row -->
-			<?php endif; ?>
+			</div>
 		<?php endforeach; ?>
 	<?php endif; ?>
 

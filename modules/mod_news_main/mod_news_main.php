@@ -24,42 +24,51 @@ $data_row = $db->loadRowList();
     <div class="mod_name module_name">Новости</div>
     <div>
         <div class="row rownews">
-            <div class="col-md-5 fnew">
-                <div><img src="/images<?php echo $img0 ?>" /></div>
-                <div>
+            <div class="col-md-5">
+                <div class="fnew">
+                    <div class="fnew-img"><img src="/images<?php echo $img0 ?>" /></div>
+                    <div class="fnew-info">
+                        <div class="title">
+                            <?php echo $data_row[0][1] ?>
+                        </div>
+                        <div class="intro">
+                            <?php echo strip_tags(mb_strimwidth($data_row[0][2], 0, 250, "...")) ?>
+                        </div>
+                        <div class="date">
+                            <?php echo file_get_contents(dirname(__FILE__).'/calendar.svg'); ?>
+                            <?php echo JHtml::_('date', $data_row[0][4], 'd.m.Y'); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="onew">
+                    <div class="onew-img"><img src="/images<?php echo $img1 ?>" /> </div>
                     <div class="title">
-                        <?php echo $data_row[0][1] ?>
+                        <?php echo $data_row[1][1] ?>
                     </div>
                     <div class="intro">
-                        <?php echo strip_tags(mb_strimwidth($data_row[0][2], 0, 80, "...")) ?>
+                        <?php echo strip_tags(mb_strimwidth($data_row[1][2], 0, 120, "...")) ?>
                     </div>
                     <div class="date">
-                        <?php echo $data_row[0][4] ?>
+                        <?php echo file_get_contents(dirname(__FILE__).'/calendar.svg'); ?>
+                        <?php echo JHtml::_('date', $data_row[1][4], 'd.m.Y'); ?>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 onew">
-                <div><img src="/images<?php echo $img1 ?>" /> </div>
-                <div class="title">
-                    <?php echo $data_row[1][1] ?>
-                </div>
-                <div class="intro">
-                    <?php echo strip_tags(mb_strimwidth($data_row[1][2], 0, 80, "...")) ?>
-                </div>
-                <div class="date">
-                    <?php echo $data_row[1][4] ?>
-                </div>
-            </div>
-            <div class="col-md-3 onew">
-                <div><img src="/images<?php echo $img2 ?>" /> </div>
-                <div class="title">
-                    <?php echo $data_row[2][1] ?>
-                </div>
-                <div class="intro">
-                    <?php echo strip_tags(mb_strimwidth($data_row[2][2], 0, 80, "...")) ?>
-                </div>
-                <div class="date">
-                    <?php echo $data_row[2][4] ?>
+            <div class="col-md-3">
+                <div class="onew">
+                    <div><img src="/images<?php echo $img2 ?>" /> </div>
+                    <div class="title">
+                        <?php echo $data_row[2][1] ?>
+                    </div>
+                    <div class="intro">
+                        <?php echo strip_tags(mb_strimwidth($data_row[2][2], 0, 120, "...")) ?>
+                    </div>
+                    <div class="date">
+                        <?php echo file_get_contents(dirname(__FILE__).'/calendar.svg'); ?>
+                        <?php echo JHtml::_('date', $data_row[2][4], 'd.m.Y'); ?>
+                    </div>
                 </div>
             </div>
         </div>
