@@ -46,7 +46,16 @@ JHtml::_('behavior.caption');
 	<?php endif; ?>
 	<?php if ($params->get('show_title') || $params->get('show_author')) : ?>
 	<div class="page-header">
-		<div class="div_h2 ntcn" itemprop="name">
+        <?php
+            if ($_SERVER['REQUEST_URI'] == "/proizvodstvo") {
+                echo '
+                    <div class="div_h2 nobcg" itemprop="name">
+                ';
+            }
+            else {
+                echo '
+                    <div class="div_h2 ntcn1" itemprop="name">
+                '; } ?>
 			<?php if ($params->get('show_title')) : ?>
 				<?php echo $this->escape($this->item->title); ?>
 			<?php endif; ?>
