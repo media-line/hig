@@ -4,6 +4,7 @@ body {
     background: url(../images/footer.png);
     background-position: bottom center;
     background-repeat: no-repeat;
+    font-size: 16px;
 }
 
 body.mainpage #content {
@@ -2564,10 +2565,6 @@ a.pagenav:hover {
         line-height: 1.1;
     }
 }
-
-
-
-
 
 /*------------------------------------*\
     #CLIENT_ABOUT (О компании "Клиенты")
