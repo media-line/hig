@@ -492,8 +492,8 @@ table {
 }
 
 .header_menu .nav-child li a {
-    margin: 0 20px;
-    padding: 5px 15px;
+/*    margin: 0 20px;
+    padding: 5px 15px;*/
     -webkit-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
@@ -1010,7 +1010,7 @@ table {
 }
 
 .header_menu .moduletable > ul > li.active a {
-    color: #fff;
+/*    color: #fff;*/
     margin: 0 -10px;
 }
 
@@ -2152,7 +2152,7 @@ a.pagenav:hover {
 .advantage {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .advant {
@@ -2169,6 +2169,7 @@ a.pagenav:hover {
     color: #0171cf;
     text-align: center;
     transition: 1s;
+    font-size: 14px;
 }
 
 .advant:hover img {
@@ -2180,6 +2181,7 @@ a.pagenav:hover {
     color: #2183d5;
     transform: scale(1.2);
     transition: 1s;
+    font-weight: bold;
 }
 
 .modal-backdrop {
@@ -2209,7 +2211,6 @@ a.pagenav:hover {
     width: 100%;
     color: #0171cf !important;
     text-align: center;
-    font-weight: bold;
     font-size: 28px;
     padding: 20px 0;
 }
@@ -2499,7 +2500,7 @@ a.pagenav:hover {
     transition: 0.2s;
     -webkit-transition: 0.2s;
     position: relative;
-    display: block;
+    display: block !important;
 }
 
 .review-module__item:hover {
@@ -2650,18 +2651,19 @@ a.pagenav:hover {
     background-color: #fff;
     border: 1px solid #b2d4f0;
     text-align: center;
+    height: 100%;
 }
 
 .to .row .item img {
     width: auto;
     height: auto;
     max-height: 163px;
-    margin: 0 auto;
+    margin: 10px auto;
+    max-width: 100%;
 }
 
 .to .row .item .name, .to .row .item .ltlname {
     color: #0171cf;
-    font-size: 16px;
     text-align: left;
     padding-left: 10px;
     background-color: transparent;
@@ -2673,11 +2675,14 @@ a.pagenav:hover {
 .to .row .item .name {
     text-transform: uppercase;
     padding-bottom: 0;
+    z-index: 0;
+    font-size: 15px;
 }
 
 .to .row .item .ltlname {
     text-transform: lowercase;
     padding-bottom: 10px;
+    font-size: 13px;
 }
 
 .mhk {
@@ -2727,4 +2732,14 @@ a.pagenav:hover {
 .wrapbot .item img {
     max-width: 100%;
     margin: 0;
+}
+
+.subheading-category {
+    background-color: #FAFEFF;
+    padding: 0 5px;
+}
+
+.header_menu .moduletable > ul > li.active > ul {
+    padding: 10px !important;
+    margin-left: -1%;
 }

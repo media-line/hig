@@ -121,6 +121,6 @@ defined('_JEXEC') or die;
 	<div class="clearfix"></div>
 
 	<div class="btn-news-wrapper">
-		<a class="btn-news" href="<?php echo JRoute::_('index.php?option=com_content&view=category&layout=blog&id='.json_decode($module->params)->catid[0]); ?>">Читать все</a>
+		<a class="btn-news" href="/novosti">Читать все</a>
 	</div>
 </div>
