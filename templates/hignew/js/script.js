@@ -29,9 +29,21 @@ jQuery(document).ready(function() {
 			jQuery(this).siblings('.manufacture_object').addClass('object-show');
 		});
 	}
+    
+    function enableFancybox () {
+        jQuery("[rel=lightbox]").fancybox();
+    }
+    
+    function showCaption () {
+        jQuery("a[rel=lightbox]").find('img').each(function (i, item) {
+            var caption = jQuery(item).attr('alt');
+            item.wrap('<p></p>');
+        })
+    }
 	
 	headerFix();
 	manufacturesToggle();
+    enableFancybox();
 
 	jQuery(function()
 	{
@@ -95,8 +107,19 @@ jQuery(window).load(function() {
         });
 
 	}
+    
+    function showCaption () {
+        jQuery("a[rel=lightbox]").find('img').each(function (i, item) {
+            var caption = jQuery(item).attr('alt');
+            newdiv = document.createElement("div"),
+            newdiv.className = "caption-lightbox"; 
+            newdiv.innerHTML = caption;
+            item.after(newdiv);
+        })
+    }
 
     relatedProductHeightFix ();
 	pageLift ();
+    showCaption();
 	
 });
