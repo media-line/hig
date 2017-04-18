@@ -334,9 +334,50 @@
         height: auto;
         width: 100%;
     }
+
+    .productfull_images {
+        width: 100%;
+        height: 200px;
+    }
+
+    .productfull_short_description {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .productfull_short_description .name {
+        background-color: transparent;
+        border-radius: 0;
+        color: #0171cf;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mod_jshopping_related_gr {
+        margin-left: 0;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap {
+        width: 49%;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .img {
+        min-height: auto;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .name {
+        background-color: transparent;
+        color: #0171cf;
+        font-size: 13px;
+    }
 }
 
 @media all and (min-width: 376px) and (max-width: 613px ) {
+    .productfull_block {
+        width: 100%;
+    }
+
     .ltl-logo img {
         height: 130px;
         padding: 10px;
@@ -664,6 +705,48 @@
 
     .list_product .sblock4 + .sblock4 .product {
         margin-left: 0;
+    }
+
+    .joomshopping_category .jshop_list_product, .productfull .joomshopping_full_product {
+        height: auto;
+        width: 100%;
+    }
+
+    .productfull_images {
+        width: 100%;
+        height: 200px;
+    }
+
+    .productfull_short_description {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .productfull_short_description .name {
+        background-color: transparent;
+        border-radius: 0;
+        color: #0171cf;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mod_jshopping_related_gr {
+        margin-left: 0;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap {
+        width: 49%;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .img {
+        min-height: auto;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .name {
+        background-color: transparent;
+        color: #0171cf;
+        font-size: 13px;
     }
 }
 
@@ -1024,6 +1107,48 @@
     .list_product .sblock4 + .sblock4 .product {
         margin-left: 0;
     }
+
+    .joomshopping_category .jshop_list_product, .productfull .joomshopping_full_product {
+        height: auto;
+        width: 100%;
+    }
+
+    .productfull_images {
+        width: 100%;
+        height: 200px;
+    }
+
+    .productfull_short_description {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .productfull_short_description .name {
+        background-color: transparent;
+        border-radius: 0;
+        color: #0171cf;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mod_jshopping_related_gr {
+        margin-left: 0;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap {
+        width: 47%;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .img {
+        min-height: auto;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .name {
+        background-color: transparent;
+        color: #0171cf;
+        font-size: 13px;
+    }
 }
 
 /*Tablet*/
@@ -1283,6 +1408,48 @@
     .list_product .sblock4 + .sblock4 .product {
         margin-left: 0;
     }
+
+    .joomshopping_category .jshop_list_product, .productfull .joomshopping_full_product {
+        height: auto;
+        width: 100%;
+    }
+
+    .productfull_images {
+        width: 49%;
+        height: 200px;
+    }
+
+    .productfull_short_description {
+        width: 49%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .productfull_short_description .name {
+        background-color: transparent;
+        border-radius: 0;
+        color: #0171cf;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mod_jshopping_related_gr {
+        margin-left: 0;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap {
+        width: 33%;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .img {
+        min-height: auto;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .name {
+        background-color: transparent;
+        color: #0171cf;
+        font-size: 13px;
+    }
 }
 
 @media all and (min-width: 767px) and (max-width: 978px) {
@@ -1479,6 +1646,48 @@
     .to2 .row a {
         width: 24%;
     }
+
+    .joomshopping_category .jshop_list_product, .productfull .joomshopping_full_product {
+        height: auto;
+        width: 100%;
+    }
+
+    .productfull_images {
+        width: 49%;
+        height: 200px;
+    }
+
+    .productfull_short_description {
+        width: 49%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .productfull_short_description .name {
+        background-color: transparent;
+        border-radius: 0;
+        color: #0171cf;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mod_jshopping_related_gr {
+        margin-left: 0;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap {
+        width: 16%;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .img {
+        min-height: auto;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .name {
+        background-color: transparent;
+        color: #0171cf;
+        font-size: 13px;
+    }
 }
 
 @media all and (min-width: 1230px) and (max-width: 1259px ) {
@@ -1661,6 +1870,48 @@
 
     .breadcrumb {
         margin-left: 12%;
+    }
+
+    .joomshopping_category .jshop_list_product, .productfull .joomshopping_full_product {
+        height: auto;
+        width: 100%;
+    }
+
+    .productfull_images {
+        width: 49%;
+        height: 200px;
+    }
+
+    .productfull_short_description {
+        width: 49%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .productfull_short_description .name {
+        background-color: transparent;
+        border-radius: 0;
+        color: #0171cf;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mod_jshopping_related_gr {
+        margin-left: 0;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap {
+        width: 24%;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .img {
+        min-height: auto;
+    }
+
+    .mod_jshopping_related_gr .related_product_wrap .name {
+        background-color: transparent;
+        color: #0171cf;
+        font-size: 13px;
     }
 }
 

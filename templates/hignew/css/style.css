@@ -1,9 +1,10 @@
 body {
     font-family: 'ProximaNova-Regular' !important;
     color: #6C6C6C;
-    background: url(../images/footer.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
+    background:
+            url(../images/footer.png) bottom center no-repeat,
+            url(/images/other/bcg-center.jpg) top center repeat-y;
+    background-size: contain;
 }
 
 body.mainpage #content {
@@ -992,6 +993,7 @@ table {
 
 .header_menu .moduletable > ul > li.active a {
     color: #fff;
+    margin: 0 -10px;
 }
 
 .nav-child li a {
@@ -1174,6 +1176,8 @@ table {
 
 .modal .modal-header {
     background-color: #01A1CF;
+    background-image: url("/images/other/zapros-bcg.jpg");
+    background-size: 100% 100%;
     color: white;
     font-weight: bold;
     font-size: 22px;
@@ -1185,7 +1189,7 @@ table {
     width: 40px;
     height: 40px;
     color: white;
-    background-color: #0171CF;
+    background-color: transparent;
     background-image: url(../images/close.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -1197,10 +1201,6 @@ table {
     position: absolute;
     top: 2px;
     right: 0;
-}
-
-.modal .modal-header .close:hover {
-    background-color: transparent;
 }
 
 .modal .modal-body {
@@ -2688,5 +2688,9 @@ a.pagenav:hover {
     background-color: transparent;
     border-radius: 0;
     width: 95%;
+    z-index: 0;
+}
+
+.productfull_short_description .name, .mod_jshopping_related_gr .related_product_wrap .name {
     z-index: 0;
 }
