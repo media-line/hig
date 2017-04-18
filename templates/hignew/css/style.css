@@ -1521,7 +1521,7 @@ a.pagenav:hover {
 }
 
 .page_article p, .page_article ul {
-    padding-bottom: 15px;
+    padding-bottom: 18px;
     font-family: 'ProximaNova-Regular';
     font-size: 13px;
     color: #000101;
@@ -2643,7 +2643,6 @@ a.pagenav:hover {
 
 .to .row .item .name, .to .row .item .ltlname {
     color: #0171cf;
-    font-size: 16px;
     text-align: left;
     padding-left: 10px;
     background-color: transparent;
@@ -2655,11 +2654,14 @@ a.pagenav:hover {
 .to .row .item .name {
     text-transform: uppercase;
     padding-bottom: 0;
+    z-index: 0;
+    font-size: 15px;
 }
 
 .to .row .item .ltlname {
     text-transform: lowercase;
     padding-bottom: 10px;
+    font-size: 13px;
 }
 
 .mhk {
