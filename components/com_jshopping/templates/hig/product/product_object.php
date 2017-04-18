@@ -44,6 +44,13 @@ foreach ($cats as $category) {
                 <?php print $this->product->name ?>
             </div>
 
+            <?php $modules = JModuleHelper::getModules('before_object');
+            if ($modules && is_array($modules)) {
+                foreach ($modules as $module) {
+                    echo JModuleHelper::renderModule($module, array('manufacturer'=>$this->product->product_manufacturer_id, 'current_id'=>$this->product->product_id));
+                };
+            } ?>
+
             <?php if (is_array($this->product->extra_field)) { ?>
                 <div class="extra_fields">
                     <?php foreach ($this->product->extra_field as $extra_field) { ?>
@@ -51,16 +58,23 @@ foreach ($cats as $category) {
                             <div class='block_efg'>
                             <div class='extra_fields_group'><?php print $extra_field['groupname'] ?></div>
                         <?php } ?>
-
-                        <div class="extra_fields_el">
-                            <span class="extra_fields_name"><?php print $extra_field['name']; ?></span><?php if ($extra_field['description']) { ?>
-                                <span class="extra_fields_description">
-                                <?php print $extra_field['description']; ?>
-                                </span><?php } ?>:
-                            <span class="extra_fields_value">
-							<?php print $extra_field['value']; ?>
-						</span>
-                        </div>
+                        
+                        <?php if ($extra_field['id'] == 5 || $extra_field['id'] == 6) { ?>
+                            <div class="extra_fields_el">
+                                <span class="extra_fields_name">
+                                <?php if ($extra_field['id'] == 5) {
+                                    echo file_get_contents(dirname(__FILE__).'./../../../../../images/svg/placeholder-filled-point.svg');
+                                } else if ($extra_field['id'] == 6) {
+                                    echo file_get_contents(dirname(__FILE__).'./../../../../../images/svg/screwdriver-and-wrench-crossed.svg');
+                                } ?></span><?php if ($extra_field['description']) { ?>
+                                    <span class="extra_fields_description">
+                                    <?php print $extra_field['description']; ?>
+                                    </span><?php } ?>
+                                <span class="extra_fields_value">
+                                <?php print $extra_field['value']; ?>
+                                </span>
+                            </div>
+                        <?php } ?>
 
                         <?php if ($extra_field['grshowclose']) { ?>
                             </div>

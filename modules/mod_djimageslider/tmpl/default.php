@@ -55,7 +55,9 @@ $wcag = $params->get('wcag', 1) ? ' tabindex="0"' : ''; ?>
 	            			<?php if (($slide->link && $action==1) || $action>1) { ?>
 								<a <?php echo $attr; ?> href="<?php echo ($action>1 ? $slide->image : $slide->link); ?>" target="<?php echo $slide->target; ?>">
 							<?php } ?>
-								<img class="dj-image" src="<?php echo $slide->image; ?>" alt="<?php echo $slide->alt; ?>" style="<?php echo $style['image'] ?>"/>
+                                <a href="<?php echo $slide->image; ?>" data-fancybox="object">
+                                    <img class="dj-image" src="<?php echo $slide->image; ?>" alt="<?php echo $slide->alt; ?>" style="<?php echo $style['image'] ?>"/>
+                                </a>
 							<?php if (($slide->link && $action==1) || $action>1) { ?>
 								</a>
 							<?php } ?>
