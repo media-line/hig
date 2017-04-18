@@ -1613,7 +1613,7 @@
     }
 
     .pdone .item .headprod {
-        height: 80%;
+        height: 74%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1830,7 +1830,7 @@
     }
 
     .pdone .item .headprod {
-        height: 80%;
+        height: 74%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

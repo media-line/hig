@@ -1577,7 +1577,7 @@ a.pagenav:hover {
 
 .button_doc {
     position: absolute;
-    top: -70px;
+    top: -72px;
     right: 0;
 }
 
@@ -1795,9 +1795,9 @@ a.pagenav:hover {
 }
 
 .button_doc {
-    border: 2px solid #4e8ac9;
+    border: 2px solid #068BCC;
     color: #fff !important;
-    background-color: #4e8ac9;
+    background-color: #068BCC;
     border-radius: 2px;
     padding: 10px 20px 10px 50px;
     font-size: 15px;
@@ -2055,7 +2055,8 @@ a.pagenav:hover {
 }
 
 .page_article img {
-    max-width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .thumbnail {
@@ -2135,7 +2136,7 @@ a.pagenav:hover {
 .page_article {
     font-size: 18px !important;
     color: black !important;
-    opacity: 0.85 !important;
+/*    opacity: 0.85 !important;*/
     font-family: 'ProximaNova-Regular' !important;
 }
 
@@ -2456,7 +2457,8 @@ a.pagenav:hover {
 
 .pdone .item {
     border: 1px solid #c6c6c6;
-    padding: 30px;
+    padding: 20px;
+    margin-bottom: 10px !important;
 }
 
 .pdone .nameprod {
@@ -2711,4 +2713,18 @@ a.pagenav:hover {
 
 .productfull_short_description .name, .mod_jshopping_related_gr .related_product_wrap .name {
     z-index: 0;
+}
+
+.map_block.map > p {
+    font-size: 20px;
+}
+
+.map_button {
+    color: #0171cf !important;
+    font-size: 15px !important;
+}
+
+.wrapbot .item img {
+    max-width: 100%;
+    margin: 0;
 }
