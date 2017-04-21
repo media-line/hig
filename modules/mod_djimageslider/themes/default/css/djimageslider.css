@@ -58,6 +58,7 @@ ul.djslider-in > li {
 .djslider-default img.dj-image {
 	border: 0 !important;
 	margin: 0 !important;
+	max-width: 100%;
 }
 
 .djslider-default.img-vcenter img.dj-image {
