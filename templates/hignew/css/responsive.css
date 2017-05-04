@@ -1251,6 +1251,18 @@
         text-align: center;
     }
 
+    .mod_contacts_page_section_info {
+        width: 100%;
+    }
+
+    .mod_contacts_page_section_fio {
+        width: 100%;
+    }
+
+    .employee_block.logo {
+        display: inline-block;
+    }
+
 /*    .prodslider {
         min-height: 258px;
     }*/
