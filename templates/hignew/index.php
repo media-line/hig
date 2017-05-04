@@ -109,7 +109,7 @@ if (JURI::current() == JURI::base()) {
 </div>
 
 <?php if ($this->countModules('slider')) { ?>
-    <div id="slider">
+    <div id="slider" class="hidden-xs hidden-sm">
         <jdoc:include type="modules" name="slider" style="xhtmlgr"/>
     </div>
 <?php } ?>
@@ -124,7 +124,7 @@ if (JURI::current() == JURI::base()) {
     <?php } ?>
 </div>
 
-<div class="container">
+<div class="container prodslider">
     <?php if ($this->countModules('slider_production')) { ?>
         <div id="slider_partners">
             <div class="container-fluid clearfix">

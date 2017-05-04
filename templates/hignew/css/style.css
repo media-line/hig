@@ -89,7 +89,7 @@ a[rel="lightbox"] {
     position: relative;
     padding-right: 5px;
     padding-left: 5px;
-    margin-top: 20px;
+    margin-top: 8px;
 }
 
 a:hover {
@@ -2153,6 +2153,8 @@ a.pagenav:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: -25px;
+    margin-bottom: 10px;
 }
 
 .advant {
@@ -2213,6 +2215,8 @@ a.pagenav:hover {
     text-align: center;
     font-size: 28px;
     padding: 20px 0;
+    margin-bottom: -10px;
+    margin-top: -26px;
 }
 
 .line {
@@ -2230,6 +2234,8 @@ a.pagenav:hover {
     background-repeat: no-repeat;
     width: 100%;
     text-align: center;
+    margin-bottom: -5px;
+    margin-top: 9px;
 }
 
 .extra_fields_el {
@@ -2389,6 +2395,8 @@ a.pagenav:hover {
     font-weight: 400;
     font-size: 30px;
     padding: 20px 0;
+    margin-top: -15px;
+    margin-bottom: -5px;
 }
 
 @media (max-width: 1199px) {
@@ -2548,6 +2556,14 @@ a.pagenav:hover {
     align-items: flex-end;
 }
 
+.review-module {
+    margin-bottom: -24px;
+}
+
+.client_mod {
+    margin-top: -17px;
+}
+
 @media (max-width: 1199px) {
     .review-module__title {
         height: 55px;
@@ -2596,10 +2612,12 @@ a.pagenav:hover {
 /*------------------------------------*\
     #CLIENT_ABOUT (О компании "Клиенты")
 \*------------------------------------*/
+
 .client_mod {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .mclient {
@@ -2742,4 +2760,124 @@ a.pagenav:hover {
 .header_menu .moduletable > ul > li.active > ul {
     padding: 10px !important;
     margin-left: -1%;
+}
+
+.word img {
+    max-width: 100%;
+}
+
+#main_category .mod_name {
+    margin-bottom: -7px;
+    background-position: 48% 54%;
+    margin-top: -12px;
+}
+
+#slider_partners .mod_name {
+    margin-top: -12px;
+    margin-bottom: 3px;
+}
+
+.djslider-loader-default {
+    margin-bottom: -77px;
+}
+
+.moduletable > .mod_name {
+    background-image: url("/images/other/line.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: #0171cf !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 20px 0;
+    margin-top: -14px;
+    margin-bottom: -8px;
+}
+
+.proektsys .wrap .row .item img {
+    transition: 1s;
+}
+
+.proektsys .wrap .row .item img:hover {
+    -moz-transform: scale(1.1) rotate(10deg) skewX(12deg);
+    -webkit-transform: scale(1.1) rotate(10deg) skewX(12deg);
+    -o-transform: scale(1.1) rotate(10deg) skewX(12deg);
+    -ms-transform: scale(1.1) rotate(10deg) skewX(12deg);
+    transform: scale(1.1) rotate(10deg) skewX(12deg);
+    transition: 1s;
+}
+
+.wmhk img {
+    transition: 1s;
+}
+
+.wmhk img:hover {
+    -moz-transform: scale(1.2) rotate(-360deg);
+    -webkit-transform: scale(1.2) rotate(-360deg);
+    -o-transform: scale(1.2) rotate(-360deg);
+    -ms-transform: scale(1.2) rotate(-360deg);
+    transform: scale(1.2) rotate(-360deg);
+    transition: 1s;
+}
+
+/*
+.wrapbot .row-left:hover, .wrapbot .row-right:hover {
+    -moz-transform: scale(0.8) rotate(0deg) skewY(10deg);
+    -webkit-transform: scale(0.8) rotate(0deg) skewY(10deg);
+    -o-transform: scale(0.8) rotate(0deg) skewY(10deg);
+    -ms-transform: scale(0.8) rotate(0deg) skewY(10deg);
+    transform: scale(0.8) rotate(0deg) skewY(10deg);
+    transition: 2s;
+}
+*/
+
+.wrapbot .row-left, .wrapbot .row-right {
+    transition: 2s;
+}
+
+.mod_name2_allwidth {
+    background-size: 100%;
+}
+
+.ntcn1 {
+    margin-top: -8px;
+    margin-bottom: -7px;
+}
+
+.newsflash > .module-title {
+    margin-top: -31px;
+    margin-bottom: -3px;
+}
+
+.review-module > .module-title {
+    margin-top: -39px;
+    margin-bottom: -3px;
+}
+
+/*animation*/
+@keyframes servis-image {
+    from {
+        width: 100%;
+    }
+    50% {
+        width: 80%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.to .row .item img:hover {
+    animation: servis-image  2s infinite ease-in-out;
+}
+
+.clients > .module-title {
+    margin-bottom: -20px;
+    margin-top: -45px;
+}
+
+.review-module_cert > .module-title {
+    margin-top: -46px;
+    margin-bottom: -3px;
 }

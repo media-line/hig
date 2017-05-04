@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
 								'url'    => $img->image_intro,
 
 								'options' => array(
-									'resolution' => '250x350',
+
 									'force_png'  => true
 								)
 							)

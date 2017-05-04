@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
             <div class="item">
                 <img src="/modules/mod_to/images/saduh.jpg" class="image" alt="Системы автоматики для установок холодоснабжения">
                 <p class="name">Системы автоматики</p>
-                <p class="ltlname">для установок холодоснабжения</p>
+                <p class="ltlname">холодоснабжения</p>
             </div>
         </a>
         <a href="/servis">
@@ -61,7 +61,7 @@ defined('_JEXEC') or die;
             <div class="item">
                 <img src="/modules/mod_to/images/centrali2.jpg" class="image" alt="Централи на основе компрессоров различного производства">
                 <p class="name">Централи на основе</p>
-                <p class="ltlname">компрессоров различного производства</p>
+                <p class="ltlname">компрессоров</p>
             </div>
         </a>
         <a href="/servis">

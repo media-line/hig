@@ -40,7 +40,7 @@ foreach ($cats as $category) {
 
             <?php include(dirname(__FILE__) . "/ratingandhits.php"); ?>
 
-            <div class="name">
+            <div class="mod_name2 mod_name2_allwidth">
                 <?php print $this->product->name ?>
             </div>
 
