@@ -412,6 +412,14 @@
         padding: 10px;
     }
 
+    .joomshopping_full_object > #slider_partners {
+        min-height: 145px;
+    }
+
+    .prodslider > #slider_partners {
+        min-height: 200px;
+    }
+
 /*    .prodslider {
         min-height: 213px;
     }*/
@@ -817,6 +825,14 @@
         height: 100% !important;
     }
 
+    .joomshopping_full_object > #slider_partners {
+        min-height: 130px;
+    }
+
+    .prodslider > #slider_partners {
+        min-height: 230px;
+    }
+
 /*    .prodslider {
         min-height: 213px;
     }*/
@@ -910,6 +926,29 @@
 
     .to .row .item img {
         max-height: 146px;
+    }
+
+    .joomshopping_full_object > #slider_partners {
+        min-height: 160px;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 1199px) {
+    .jshop_list_category .jshop_categ {
+        width: 49% !important;
+        margin: 0.5%;
+    }
+
+    .jshop_categ .image {
+        display: none;
+    }
+
+    .sblock2_inner.products, .jspContainer, .jspPane {
+        width: 100% !important;
+    }
+
+    .category_short_description {
+        font-size: 13px;
     }
 }
 
@@ -1681,6 +1720,14 @@
     .mod_contacts_page_section_fio {
         width: 50%;
     }
+
+    .jshop_categ .image {
+        display: inherit;
+    }
+
+    .sblock2_inner.products, .jspContainer, .jspPane {
+        width: 270px !important;
+    }
 }
 
 /*Desktop*/
@@ -1714,7 +1761,7 @@
     }
 
     .breadcrumb {
-        margin-left: 16%;
+        margin-left: 17%;
     }
 
     .proektsys .wrap, .proektsys .wrap .row {
@@ -2060,7 +2107,7 @@
     }
 
     .breadcrumb {
-        margin-left: 12%;
+        margin-left: 19%;
     }
 
     .joomshopping_category .jshop_list_product, .productfull .joomshopping_full_product {
@@ -2192,11 +2239,25 @@
     .header_contacts {
         font-size: 30px;
     }
+
+    .breadcrumb {
+        margin-left: 15%;
+    }
 }
 
 @media all and (min-width: 1860px) and (max-width: 1889px ) {
     .header_contacts {
         font-size: 32px;
+    }
+
+    .breadcrumb {
+        margin-left: 13%;
+    }
+}
+
+@media all and (min-width: 1890px) {
+    .breadcrumb {
+        margin-left: 11%;
     }
 }
 

@@ -54,7 +54,7 @@ JHtml::_('behavior.caption');
             }
             else {
                 echo '
-                    <div class="div_h2 ntcn1" itemprop="name">
+                    <div class="div_h2 h2_notline" itemprop="name">
                 '; } ?>
 			<?php if ($params->get('show_title')) : ?>
 				<?php echo $this->escape($this->item->title); ?>
