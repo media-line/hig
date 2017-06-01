@@ -950,6 +950,8 @@
     .category_short_description {
         font-size: 13px;
     }
+
+
 }
 
 /*transition Mobile to Tablet*/
@@ -1300,6 +1302,10 @@
 
     .employee_block.logo {
         display: inline-block;
+    }
+
+    .joomshopping_full_object #slider_partners {
+        min-height: 150px;
     }
 
 /*    .prodslider {
@@ -1662,6 +1668,10 @@
     .mod_contacts_page_section_info {
         width: 57%;
     }
+
+    .joomshopping_full_object #slider_partners {
+        min-height: 160px;
+    }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
@@ -1727,6 +1737,10 @@
 
     .sblock2_inner.products, .jspContainer, .jspPane {
         width: 270px !important;
+    }
+
+    .joomshopping_full_object #slider_partners {
+        min-height: 185px;
     }
 }
 
