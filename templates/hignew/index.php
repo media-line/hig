@@ -124,7 +124,7 @@ if (JURI::current() == JURI::base()) {
     <?php } ?>
 </div>
 
-<div class="container prodslider">
+<div class="container prodslider hidden-xs hidden-sm">
     <?php if ($this->countModules('slider_production')) { ?>
         <div id="slider_partners">
             <div class="container-fluid clearfix">

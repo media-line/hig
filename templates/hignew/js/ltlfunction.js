@@ -32,21 +32,31 @@ function LenghtTail(o) {
 
 }
 
+function HideSlider() {
+    var targpage = window.location.pathname;
+    var targ = document.getElementsByClassName("prodslider")[0];
+
+    if ((targpage.indexOf('/kontakty'))||(targpage.indexOf('/products'))||(targpage.indexOf('/serv  is'))||(targpage.indexOf('/o-kompanii'))||(targpage.indexOf('/proizvodstvo'))||(targpage.indexOf('/proektirovanie'))||(targpage.indexOf('/produktsiya')))
+    {
+        targ.style.display="none";
+    }
+}
+
 function Test() {
     var size = document.documentElement.clientWidth;
-
     alert (size);
 }
 
 window.onload = function () {
 
-    LenghtTail('.form_tail')
+    LenghtTail('.form_tail');
     LittleText();
+    HideSlider();
     //Test();
 
     var el = document.getElementById('float-block');
     scrollFloat.init(el);
-}
+};
 
 var scrollFloat = function () {
     'use strict';

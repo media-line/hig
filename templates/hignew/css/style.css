@@ -2805,11 +2805,11 @@ a.pagenav:hover {
 }
 
 .proektsys .wrap .row .item img:hover {
-    -moz-transform: scale(1.1) rotate(10deg) skewX(12deg);
-    -webkit-transform: scale(1.1) rotate(10deg) skewX(12deg);
-    -o-transform: scale(1.1) rotate(10deg) skewX(12deg);
-    -ms-transform: scale(1.1) rotate(10deg) skewX(12deg);
-    transform: scale(1.1) rotate(10deg) skewX(12deg);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     transition: 1s;
 }
 
@@ -2858,6 +2858,57 @@ a.pagenav:hover {
 .review-module > .module-title {
     margin-top: -39px;
     margin-bottom: -3px;
+}
+
+.sert .caption-lightbox {
+    background-color: transparent !important;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images img {
+    margin-top: 30px;
+}
+
+.psh {
+    margin-top: -28px;
+    margin-bottom: -7px;
+}
+
+.phv {
+    margin-top: -14px;
+    margin-bottom: -8px;
+}
+
+.rivo {
+    margin-top: -30px;
+    margin-bottom: -4px;
+}
+
+.toho {
+    margin-top: -13px;
+    margin-bottom: -11px;
+}
+
+.mho {
+    margin-top: -40px;
+    margin-bottom: -11px;
+}
+
+.mhkname {
+    margin-top: -42px;
+    margin-bottom: -11px;
+}
+
+.sblock4 > .block_product {
+    height: 275px !important;
+    min-height: 275px !important;
+    max-height: 275px !important;
 }
 
 /*animation*/

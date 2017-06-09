@@ -420,6 +420,10 @@
         min-height: 200px;
     }
 
+    .container .prodslider {
+        min-height: 265px;
+    }
+
 /*    .prodslider {
         min-height: 213px;
     }*/
@@ -831,6 +835,10 @@
 
     .prodslider > #slider_partners {
         min-height: 230px;
+    }
+
+    .container .prodslider {
+        min-height: 265px;
     }
 
 /*    .prodslider {
@@ -1308,6 +1316,21 @@
         min-height: 150px;
     }
 
+    .prodslider {
+        min-height: 240px;
+    }
+
+    .jshop_list_product .block_product {
+        min-height: 685px;
+        max-height: 685px;
+        overflow: hidden;
+        height: 685px;
+    }
+
+    .list_product_object .product {
+        height: 100%;
+    }
+
 /*    .prodslider {
         min-height: 258px;
     }*/
@@ -1672,6 +1695,21 @@
     .joomshopping_full_object #slider_partners {
         min-height: 160px;
     }
+
+    .prodslider {
+        min-height: 265px;
+    }
+
+    .jshop_list_product .block_product {
+        min-height: 565px;
+        max-height: 565px;
+        overflow: hidden;
+        height: 565px;
+    }
+
+    .list_product_object .product {
+        height: 100%;
+    }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
@@ -1742,9 +1780,40 @@
     .joomshopping_full_object #slider_partners {
         min-height: 185px;
     }
+
+    .container .prodslider {
+        min-height: 265px;
+    }
+
+    .prodslider {
+        min-height: 270px;
+    }
+
+    .jshop_list_product .block_product {
+        min-height: 520px;
+        max-height: 520px;
+        overflow: hidden;
+        height: 520px;
+    }
+
+    .list_product_object .product {
+        height: 100%;
+    }
 }
 
 /*Desktop*/
+
+@media all and (min-width: 1200px) {
+    .block_product {
+        height: 520px;
+        min-height: 520px;
+        max-height: 520px;
+    }
+
+    .list_product_object .product {
+        height: 100%;
+    }
+}
 
 @media all and (min-width: 1200px) and (max-width: 1419px ) {
     .big-logo img {
@@ -1942,6 +2011,14 @@
     }
 }
 
+@media all and (min-width: 1300px) {
+    .block_product {
+        height: 380px;
+        min-height: 380px;
+        max-height: 380px;
+    }
+}
+
 @media all and (min-width: 1300px) and (max-width: 1339px ) {
     .big-logo img {
         left: -18%;
@@ -2131,7 +2208,8 @@
 
     .productfull_images {
         width: 49%;
-        height: 200px;
+        /*height: 200px;*/
+        height: 100%;
     }
 
     .productfull_short_description {

@@ -228,6 +228,10 @@ td.jshop_img_description {
     padding-left: 10px;
 }
 
+.jsop_img_description {
+    margin-top: 10px;
+}
+
 .jshop_subtotal .value {
     text-align: right;
     white-space: nowrap;
@@ -911,7 +915,7 @@ span.prod_attr_img img {
 }
 
 .jshop_img_description #list_product_image_thumb {
-    display: none;
+    /*display: none;*/
 }
 
 .productfull .text_zoom {
@@ -1909,8 +1913,9 @@ span.prod_attr_img img {
 
 .productfull_images {
     width: 33%;
-    border: 1px solid #C0E8F7;
+    /*border: 1px solid #C0E8F7;*/
     padding: 20px;
+    margin: 0 auto;
 }
 
 .productfull_short_description {
@@ -2017,6 +2022,10 @@ span.prod_attr_img img {
 
 .list_product_object .product:hover {
     border: 2px solid #0171CF;
+}
+
+.list_product_object .product > .images > a {
+    width: 100% ;
 }
 
 .manufacture_block {
@@ -2309,4 +2318,19 @@ span.prod_attr_img img {
 
 .screwdriver-and-wrench-crossed {
     fill: #068bcc;
+}
+
+.joomshopping_full_block > .productfull_blocks {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    min-height: 330px;
+}
+
+.image_middle {
+    margin-bottom: 10px;
+}
+
+.joomshopping_menu {
+    display: none;
 }
