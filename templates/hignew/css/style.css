@@ -1855,7 +1855,14 @@ a.pagenav:hover {
     z-index: 10;
     border: 2px solid #D0D0D0;
     width: 130%;
+}
+
+.clients .item-wrapper:nth-child(even) .span2:hover {
     margin-left: -2.9%;
+}
+
+.clients .item-wrapper:nth-child(odd) .span2:hover {
+    margin-left: -23.9%;
 }
 
 .clients .item-wrapper {
@@ -2936,4 +2943,15 @@ a.pagenav:hover {
 .review-module_cert > .module-title {
     margin-top: -46px;
     margin-bottom: -3px;
+}
+
+.icondown .bold {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icondown .bold img {
+    margin-right: 10px;
 }
